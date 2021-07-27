@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="3000"
+        motion:autoTransition="animateToEnd">
+       <KeyFrameSet>
+           <KeyAttribute
+               motion:motionTarget="@+id/stampG"
+               motion:framePosition="0"
+               android:alpha="0" />
+           <KeyAttribute
+               motion:motionTarget="@+id/stampG"
+               motion:framePosition="50"
+               android:alpha="0.75" />
+           <KeyAttribute
+               motion:motionTarget="@+id/stampG"
+               motion:framePosition="70"
+               android:alpha="1" />
+           <KeyAttribute
+               motion:motionTarget="@+id/stampO"
+               motion:framePosition="30"
+               android:rotationY="180" />
+           <KeyAttribute
+               motion:motionTarget="@+id/stampO"
+               motion:framePosition="100"
+               android:rotationY="360" />
+           <KeyAttribute
+               motion:motionTarget="@+id/stampO"
+               motion:framePosition="15"
+               android:scaleY="1.6" />
+           <KeyAttribute
+               motion:motionTarget="@+id/stampO"
+               motion:framePosition="0"
+               android:scaleY="0.6" />
+           <KeyAttribute
+               motion:motionTarget="@+id/stampO"
+               motion:framePosition="30"
+               android:scaleY="1.25" />
+           <KeyAttribute
+               motion:motionTarget="@+id/stampO"
+               motion:framePosition="5"
+               android:scaleY="0.25" />
+           <KeyAttribute
+               motion:motionTarget="@+id/stampO"
+               motion:framePosition="80"
+               android:rotationY="340" />
+           <KeyAttribute
+               motion:motionTarget="@+id/stampO"
+               motion:framePosition="80"
+               android:scaleY="1" />
+           <KeyAttribute
+               motion:motionTarget="@+id/stampO"
+               motion:framePosition="60"
+               android:rotationY="300" />
+           <KeyAttribute
+               motion:motionTarget="@+id/stampO"
+               motion:framePosition="0"
+               android:alpha="0" />
+           <KeyAttribute
+               motion:motionTarget="@+id/stampO"
+               motion:framePosition="20"
+               android:alpha="0.8" />
+       </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+    </ConstraintSet>
+
+</MotionScene>

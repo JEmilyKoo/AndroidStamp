@@ -22,7 +22,7 @@ public class HomeActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://localhost:9090/exer/"));
+                Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://10.0.2.2:9090/exer/"));
                 startActivity(myIntent);
             }
 

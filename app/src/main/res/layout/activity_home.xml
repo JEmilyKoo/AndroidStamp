@@ -15,7 +15,7 @@
         android:layout_marginTop="256dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
-        android:text="홈화면 예정지"
+        android:text="홈그라운드 예정지"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,11 +30,13 @@
         android:layout_marginTop="416dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
-        android:text="찍GO 바로가기"
+        android:text="찍GO 모바일웹 바로가기"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

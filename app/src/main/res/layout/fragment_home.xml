@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment"
+
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:id="@+id/buttonNearStamp"
+        android:layout_width="87dp"
+        android:layout_height="87dp"
+        android:translationX="10dp"
+        android:translationY="670dp"
+        android:text="주변스탬프" />
+
+    <Button
+        android:id="@+id/buttonStampList"
+        android:layout_width="87dp"
+        android:layout_height="87dp"
+        android:translationX="290dp"
+        android:translationY="670dp"
+        android:text="스탬프리스트" />
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/map" />
+
+    <ImageButton
+        android:id="@+id/buttonReview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:translationX="150dp"
+        android:translationY="670dp" />
+
+
+    <ImageButton
+        android:id="@+id/menubutton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/menubutton"
+        android:translationX="20dp"
+        android:translationY="30dp" />
+
+    <Button
+        android:id="@+id/button_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="32dp"
+        android:text="웹 바로가기"
+        android:textSize="24sp"
+
+        android:translationX="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</FrameLayout>

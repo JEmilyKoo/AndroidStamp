@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "kosmo.com.stampgo"
-        minSdkVersion 16
+        minSdkVersion 26
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -33,6 +33,13 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.3.0'
     implementation 'com.google.android.material:material:1.4.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.squareup.okhttp3:okhttp:4.7.2'
+    //비동기/동기 방식으로 REST API를 요청(http통신)하는 라이브러니
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    //jackson 컨버터 사용시(JSON->DTO로 DTO->JSON으로 변환하는 라이브러니)
+    implementation 'com.squareup.retrofit2:converter-jackson:2.9.0'
+    //String으로 응답받을때
+    implementation group: 'com.squareup.retrofit2', name: 'converter-scalars', version: '2.9.0'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'

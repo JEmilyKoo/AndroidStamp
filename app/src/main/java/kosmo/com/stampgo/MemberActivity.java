@@ -76,7 +76,7 @@ public class MemberActivity extends AppCompatActivity {
                                         .setTitle("회원가입 결과")
                                         .setMessage("회원가입 성공 했습니다.")
                                         .show();
-                                Intent intent = new Intent(MemberActivity.this, HomeActivity.class);
+                                Intent intent = new Intent(MemberActivity.this, LoginActivity.class);
                                 startActivity(intent);
 
                             } else {

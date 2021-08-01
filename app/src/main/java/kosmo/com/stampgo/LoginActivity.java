@@ -4,6 +4,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -55,8 +56,16 @@ public class LoginActivity extends AppCompatActivity {
                         MemberDTO member = response.body();
                         Log.i("kosmo.com.stampgo", "결과값: "+member.getId());
                         if(member.getId() != null){
+
                             Intent intent = new Intent(LoginActivity.this,HomeActivity.class);
                             startActivity(intent);
+
+                            SharedPreferences preferences = getSharedPreferences("loginInfo",MODE_PRIVATE);
+                            SharedPreferences.Editor editor =preferences.edit();
+
+                            editor.putString("id",member.getId());
+                            editor.putString("pwd",member.getPwd());
+                            editor.commit();
                         }/////////로그인 성공
                         else{
                             //Toast.makeText(LoginActivity.this,"아이디와 비번이 일치하지 않아요",Toast.LENGTH_SHORT).show();

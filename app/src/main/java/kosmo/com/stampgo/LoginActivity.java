@@ -93,10 +93,16 @@ public class LoginActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void homeClick(View view) {
-        Intent intent = new Intent(this, HomeActivity.class);
+    public void SplashClick(View view) {
+        Intent intent = new Intent(this, SplashActivity.class);
         startActivity(intent);
     }
+
+    public void mapClick(View view){
+        Intent intent = new Intent(this, MapAcitivity.class);
+        startActivity(intent);
+    }
+
 
     private void initView() {
         id = (EditText) findViewById(R.id.idInput);

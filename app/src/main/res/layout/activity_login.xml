@@ -111,6 +111,21 @@
         app:layout_constraintTop_toBottomOf="@+id/memberButton" />
 
     <Button
+        android:id="@+id/mapButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginLeft="144dp"
+        android:layout_marginTop="16dp"
+        android:text="맵으로 이동"
+        android:textColor="@color/white"
+        app:backgroundTint="#03C75A"
+        android:onClick="mapClick"
+        app:layout_constraintEnd_toEndOf="@+id/memberButton"
+        app:layout_constraintStart_toStartOf="@+id/memberButton"
+        app:layout_constraintTop_toBottomOf="@+id/memberButton4" />
+
+    <Button
         android:id="@+id/memberButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -119,7 +134,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="288dp"
         android:layout_marginRight="288dp"
-        android:onClick="homeClick"
+        android:onClick="SplashClick"
         android:text="둘러보기"
         android:textColor="@color/stampcolor"
         app:backgroundTint="@color/white"

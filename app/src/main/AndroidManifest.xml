@@ -3,7 +3,10 @@
     package="kosmo.com.stampgo">
     <!-- 인터넷 권 한 -->
     <uses-permission android:name="android.permission.INTERNET" />
-<!--test-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION">
+    </uses-permission>
+
+    <!--test-->
     <!--test 2-->
     <!-- test3 -->
     <application
@@ -14,10 +17,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.StampGO">
-        <activity android:name=".HomeActivity"></activity>
+        <activity android:name=".HomeActivity"/>
         <activity android:name=".LoginActivity" />
         <activity android:name=".MemberActivity" /> <!-- MainActivity 에서 intent-filter 를 제거하고 SplashActivity 로 옮겨서 활성화 -->
         <activity android:name=".MainActivity" />
+        <activity android:name=".MapAcitivity" />
         <activity
             android:name=".SplashActivity"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
@@ -27,6 +31,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <meta-data android:name="com.kakao.sdk.AppKey" android:value="ad747a9e4b06f185c274a1fdfb39c93b"/>
     </application>
 
 </manifest>

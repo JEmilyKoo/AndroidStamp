@@ -27,11 +27,6 @@
         android:text="스탬프리스트" />
 
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/map" />
 
     <ImageButton
         android:id="@+id/buttonReview"
@@ -60,7 +55,6 @@
         android:layout_marginEnd="32dp"
         android:text="웹 바로가기"
         android:textSize="24sp"
-
         android:translationX="80dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"

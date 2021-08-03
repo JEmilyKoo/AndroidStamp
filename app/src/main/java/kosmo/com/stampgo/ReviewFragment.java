@@ -4,6 +4,8 @@ import android.net.wifi.WifiManager;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,6 +17,7 @@ import java.net.InetAddress;
 import java.net.NetworkInterface;
 import java.util.Collections;
 import java.util.List;
+import java.util.Vector;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -83,6 +86,26 @@ public class ReviewFragment extends Fragment {
                 activity.onFragmentChanged(1);
             }
         });
+
+
+        //위젯 얻기
+        RecyclerView recyclerView= rootView.findViewById(R.id.recyclerView);
+        //데이타 준비
+        List<Item> items = new Vector<>();
+        for(int i=1;i <=50;i++) items.add(new Item(i+"번째 제목",R.drawable.rounded));
+        //어댑터 생성
+        MyRecyclerAdapter adapter = new MyRecyclerAdapter(rootView.getContext(),items);
+        //리사이클뷰와 어댑터 연결
+        recyclerView.setAdapter(adapter);
+        //레이아웃 설정-세로방향
+        //recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        //가로방향
+        //recyclerView.setLayoutManager(new LinearLayoutManager(this,RecyclerView.HORIZONTAL,false));
+
+        recyclerView.setLayoutManager(new GridLayoutManager(rootView.getContext(),2));
+
+
+
        //sample = rootView.findViewById(R.id.sample);
         //IP=getIPAddress(true);
         //sample.setText("IP");

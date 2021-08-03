@@ -5,11 +5,19 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.wifi.WifiManager;
 import android.os.Bundle;
+import android.text.format.Formatter;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
+
+import java.net.InetAddress;
+import java.net.NetworkInterface;
+import java.util.Collections;
+import java.util.List;
 
 import kosmo.com.stampgo.service.MemberDTO;
 import kosmo.com.stampgo.service.StampService;
@@ -35,7 +43,6 @@ public class LoginActivity extends AppCompatActivity {
         //버튼에 리스너 부착
         btnLogin.setOnClickListener(listener);
     }
-
     View.OnClickListener listener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
@@ -44,7 +51,7 @@ public class LoginActivity extends AppCompatActivity {
             String password = pwd.getText().toString();
 
             StampService stampService = new Retrofit.Builder()
-                    .baseUrl("http://192.168.0.20:9090/exer/")
+                    .baseUrl("http://10.0.2.2:9090/exer/")
                     .addConverterFactory(JacksonConverterFactory.create())
                     .build()
                     .create(StampService.class);

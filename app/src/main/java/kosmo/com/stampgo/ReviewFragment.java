@@ -1,5 +1,6 @@
 package kosmo.com.stampgo;
 
+import android.net.wifi.WifiManager;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -8,6 +9,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
+
+import java.net.InetAddress;
+import java.net.NetworkInterface;
+import java.util.Collections;
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -15,7 +22,8 @@ import android.widget.Button;
  * create an instance of this fragment.
  */
 public class ReviewFragment extends Fragment {
-
+    TextView sample;
+    String IP;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -54,8 +62,15 @@ public class ReviewFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
-    }
 
+
+    }
+/*
+
+
+
+
+ */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -68,7 +83,9 @@ public class ReviewFragment extends Fragment {
                 activity.onFragmentChanged(1);
             }
         });
-
+       //sample = rootView.findViewById(R.id.sample);
+        //IP=getIPAddress(true);
+        //sample.setText("IP");
         return rootView;
         //   return inflater.inflate(R.layout.fragment_menu, container, false); // Inflate the layout for this fragment
         //return inflater.inflate(R.layout.fragment_review, container, false);

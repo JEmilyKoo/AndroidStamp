@@ -10,6 +10,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import java.net.InetAddress;
+import java.net.NetworkInterface;
+import java.util.Collections;
+import java.util.List;
+
 import kosmo.com.stampgo.service.MemberDTO;
 import kosmo.com.stampgo.service.StampService;
 import retrofit2.Call;
@@ -55,9 +60,8 @@ public class MemberActivity extends AppCompatActivity {
             }
             else {////비밀번호 같은지 확인
 
-
                 StampService stampService = new Retrofit.Builder()
-                        .baseUrl("http://192.168.0.20:9090/exer/")
+                        .baseUrl("http://10.0.2.2:9090/exer/")
                         .addConverterFactory(JacksonConverterFactory.create())
                         .build()
                         .create(StampService.class);

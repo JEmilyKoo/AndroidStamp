@@ -1,13 +1,18 @@
 package kosmo.com.stampgo;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -19,16 +24,17 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Vector;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link ReviewFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import kosmo.com.stampgo.service.MemberDTO;
+import kosmo.com.stampgo.service.ReviewDTO;
+import kosmo.com.stampgo.service.ReviewService;
+import kosmo.com.stampgo.service.StampService;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.jackson.JacksonConverterFactory;
+
 public class ReviewFragment extends Fragment {
-    TextView sample;
-    String IP;
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
@@ -39,17 +45,7 @@ public class ReviewFragment extends Fragment {
     public ReviewFragment() {
         // Required empty public constructor
     }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment ReviewFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static ReviewFragment newInstance(String param1, String param2) {
+ public static ReviewFragment newInstance(String param1, String param2) {
         ReviewFragment fragment = new ReviewFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
@@ -68,12 +64,6 @@ public class ReviewFragment extends Fragment {
 
 
     }
-/*
-
-
-
-
- */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -92,9 +82,36 @@ public class ReviewFragment extends Fragment {
         RecyclerView recyclerView= rootView.findViewById(R.id.recyclerView);
         //데이타 준비
         List<Item> items = new Vector<>();
-        for(int i=1;i <=50;i++) items.add(new Item(i+"번째 제목",R.drawable.rounded));
+
+
+
+  //  ;
+//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        for(int i = 1; i <=50; i++) items.add(new Item(i+"번째 제목",R.drawable.rounded,Integer.toString(i))
+        );
+        //rootView.findViewById(R.id.itemImage);
+        com.makeramen.roundedimageview.RoundedImageView itemImage = rootView.findViewById(R.id.itemImage);
+        //  TextView itemTitle = rootView.findViewById(R.id.itemTitle);
+
+
         //어댑터 생성
         MyRecyclerAdapter adapter = new MyRecyclerAdapter(rootView.getContext(),items);
+
         //리사이클뷰와 어댑터 연결
         recyclerView.setAdapter(adapter);
         //레이아웃 설정-세로방향
@@ -102,7 +119,7 @@ public class ReviewFragment extends Fragment {
         //가로방향
         //recyclerView.setLayoutManager(new LinearLayoutManager(this,RecyclerView.HORIZONTAL,false));
 
-        recyclerView.setLayoutManager(new GridLayoutManager(rootView.getContext(),2));
+        recyclerView.setLayoutManager(new GridLayoutManager(rootView.getContext(),1));
 
 
 

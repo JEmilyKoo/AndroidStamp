@@ -1874,6 +1874,8 @@ id beginning
 id blocking
 id bottom
 id bounce
+id btn_cancel
+id btn_side_level_1
 id button
 id buttonNearStamp
 id buttonPanel
@@ -1965,6 +1967,7 @@ id fill_vertical
 id filled
 id fitToContents
 id fixed
+id fl_silde
 id flip
 id floating
 id forever
@@ -2256,6 +2259,7 @@ id unlabeled
 id up
 id useLogo
 id view_offset_helper
+id view_sildebar
 id view_tree_lifecycle_owner
 id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
@@ -2427,6 +2431,7 @@ layout notification_template_part_time
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
+layout sidebar
 layout support_simple_spinner_dropdown_item
 layout test_action_chip
 layout test_chip_zero_corner_radius
@@ -3428,6 +3433,8 @@ styleable ViewBackgroundHelper android_background backgroundTint backgroundTintM
 styleable ViewPager2 android_orientation
 styleable ViewStubCompat android_id android_layout android_inflatedId
 xml activity_splash_scene
+xml sidebar_hidden
+xml sidebar_show
 xml standalone_badge
 xml standalone_badge_gravity_bottom_end
 xml standalone_badge_gravity_bottom_start

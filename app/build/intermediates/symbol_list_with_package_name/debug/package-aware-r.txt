@@ -2112,10 +2112,12 @@ id percent
 id pin
 id position
 id postCategory
+id postDate
 id postLayout
 id postLike
 id postLikeCnt
 id postMap
+id postNickName
 id postReply
 id postReplyCnt
 id postShare

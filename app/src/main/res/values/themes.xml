@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.StampGO" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.StampGO" parent="Theme.Design.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/stampcolor</item>
         <item name="colorPrimaryVariant">@color/stampsubcolor</item>

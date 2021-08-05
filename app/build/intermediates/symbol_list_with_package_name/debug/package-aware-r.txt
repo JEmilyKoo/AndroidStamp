@@ -1711,12 +1711,15 @@ drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable button_drawable
+drawable categorybutton
 drawable cursor_drawable
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable heartoff
+drawable hearton
 drawable ic_baseline_beenhere_24
 drawable ic_baseline_https_24
 drawable ic_baseline_person_24
@@ -1728,6 +1731,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_search
 drawable imgstampg
 drawable imgstampo
 drawable map
@@ -1774,10 +1778,13 @@ drawable photo6
 drawable recommend
 drawable rounded
 drawable select_handler
+drawable share
 drawable stamplogowhite300px
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable tripboardbutton
+drawable writebutton
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -1880,6 +1887,7 @@ id cache_measures
 id cancel_action
 id cancel_button
 id cardview
+id categoryButton
 id center
 id center_horizontal
 id center_vertical
@@ -1984,6 +1992,7 @@ id ignore
 id ignoreRequest
 id image
 id imageView
+id imageView6
 id info
 id invisible
 id inward
@@ -2007,6 +2016,7 @@ id linearLayout
 id listMode
 id list_item
 id mapButton
+id mapImage
 id map_view
 id masked
 id material_clock_display
@@ -2032,6 +2042,7 @@ id media_actions
 id memberButton
 id memberButton2
 id memberButton4
+id menuButton
 id menubutton
 id message
 id middle
@@ -2100,7 +2111,16 @@ id peekHeight
 id percent
 id pin
 id position
+id postCategory
 id postLayout
+id postLike
+id postLikeCnt
+id postMap
+id postReply
+id postReplyCnt
+id postShare
+id postTitle
+id postimage
 id progress_circular
 id progress_horizontal
 id radio
@@ -2127,6 +2147,7 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
+id searchButton
 id search_badge
 id search_bar
 id search_button
@@ -2225,6 +2246,8 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tripBoardButton
+id tripMenuBar
 id unchecked
 id uniform
 id unlabeled
@@ -2237,10 +2260,12 @@ id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
 id welcomeText
+id whiteMenu
 id withText
 id withinBounds
 id wrap
 id wrap_content
+id writeButton
 id zero_corner_chip
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
@@ -2335,6 +2360,7 @@ layout design_text_input_start_icon
 layout fragment_home
 layout fragment_menu
 layout fragment_near_stamp
+layout fragment_post
 layout fragment_review
 layout fragment_stamp_list
 layout item_layout
@@ -2415,6 +2441,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+menu postbottom
 mipmap ic_launcher
 mipmap ic_launcher_foreground
 mipmap ic_launcher_round

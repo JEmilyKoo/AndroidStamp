@@ -6,21 +6,134 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ReviewFragment"
     android:orientation="vertical"
-    android:padding="5dp">
+    android:background="@color/white"
+    android:layout_margin="0dp"
+    android:padding="0dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/tripMenuBar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="top"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:layout_margin="0dp"
+        android:padding="0dp">
+
+        <ImageButton
+            android:id="@+id/menuButton"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/stampcolor"
+            android:scaleType="fitStart"
+            android:src="@drawable/menubutton"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+
+            />
+        <ImageButton
+            android:id="@+id/searchButton"
+            android:layout_width="32dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:background="@color/stampcolor"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_search"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+
+
+            />
+        <Button
+            android:id="@+id/tripBoardButton"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:layout_weight="3"
+            android:background="@drawable/tripboardbutton"
+            android:shadowColor="#A8A8A8"
+
+            android:padding="0dp"
+
+            android:shadowDx="1"
+            android:shadowDy="1"
+
+            android:shadowRadius="5"
+            android:text="여행 리뷰"
+            android:textColor="#FCFCFC"
+            android:textSize="14sp"
+
+
+            />
+
+        <LinearLayout
+            android:id="@+id/whiteMenu"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_gravity="top"
+          android:background="@color/stampcolor"
+            android:orientation="horizontal"
+            android:layout_margin="0dp"
+            android:padding="0dp">
+
+            <Button
+                android:id="@+id/categoryButton"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+
+                android:textColor="#0E53BF"
+
+                android:background="@drawable/categorybutton"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="5"
+                android:layout_margin="0dp"
+                android:padding="0dp"
+                android:text="카테고리"
+                />
+
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/writeButton"
+            android:layout_width="91dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/writebutton"
+
+            android:text="리뷰 작성"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+
+            />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="x"
+            android:translationX="310dp"
+            android:translationY="10dp" />
+    </LinearLayout>
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/recyclerView"
+         android:id="@+id/recyclerView"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
       />
+
     <!-- TODO: Update blank fragment layout -->
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="48dp"
-        android:layout_height="wrap_content"
-        android:text="x"
-        android:translationX="310dp"
-        android:translationY="10dp" />
+
 
 </LinearLayout>

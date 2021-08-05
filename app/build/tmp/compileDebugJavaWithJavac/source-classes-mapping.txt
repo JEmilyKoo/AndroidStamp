@@ -1,5 +1,15 @@
 kosmo/com/stampgo/service/ReviewDTO.java
  kosmo.com.stampgo.service.ReviewDTO
+kosmo/com/stampgo/BuildConfig.java
+ kosmo.com.stampgo.BuildConfig
+kosmo/com/stampgo/service/StampService.java
+ kosmo.com.stampgo.service.StampService
+kosmo/com/stampgo/service/MemberDTO.java
+ kosmo.com.stampgo.service.MemberDTO
+kosmo/com/stampgo/service/ReviewService.java
+ kosmo.com.stampgo.service.ReviewService
+kosmo/com/stampgo/Item.java
+ kosmo.com.stampgo.Item
 kosmo/com/stampgo/HomeActivity.java
  kosmo.com.stampgo.HomeActivity
 kosmo/com/stampgo/NearStampFragment.java
@@ -9,8 +19,6 @@ kosmo/com/stampgo/LoginActivity.java
  kosmo.com.stampgo.LoginActivity
  kosmo.com.stampgo.LoginActivity$1
  kosmo.com.stampgo.LoginActivity$1$1
-kosmo/com/stampgo/service/ReviewService.java
- kosmo.com.stampgo.service.ReviewService
 kosmo/com/stampgo/MenuFragment.java
  kosmo.com.stampgo.MenuFragment
  kosmo.com.stampgo.MenuFragment$1
@@ -22,10 +30,9 @@ kosmo/com/stampgo/MemberActivity.java
  kosmo.com.stampgo.MemberActivity$1$1
 kosmo/com/stampgo/MainActivity.java
  kosmo.com.stampgo.MainActivity
-kosmo/com/stampgo/service/StampService.java
- kosmo.com.stampgo.service.StampService
-kosmo/com/stampgo/BuildConfig.java
- kosmo.com.stampgo.BuildConfig
+kosmo/com/stampgo/ReviewFragment.java
+ kosmo.com.stampgo.ReviewFragment
+ kosmo.com.stampgo.ReviewFragment$1
 kosmo/com/stampgo/StampListFragment.java
  kosmo.com.stampgo.StampListFragment
  kosmo.com.stampgo.StampListFragment$1
@@ -37,17 +44,10 @@ kosmo/com/stampgo/HomeFragment.java
  kosmo.com.stampgo.HomeFragment$4
 kosmo/com/stampgo/MapAcitivity.java
  kosmo.com.stampgo.MapAcitivity
-kosmo/com/stampgo/SplashActivity.java
- kosmo.com.stampgo.SplashActivity
- kosmo.com.stampgo.SplashActivity$1
-kosmo/com/stampgo/Item.java
- kosmo.com.stampgo.Item
-kosmo/com/stampgo/service/MemberDTO.java
- kosmo.com.stampgo.service.MemberDTO
-kosmo/com/stampgo/ReviewFragment.java
- kosmo.com.stampgo.ReviewFragment
- kosmo.com.stampgo.ReviewFragment$1
 kosmo/com/stampgo/MyRecyclerAdapter.java
  kosmo.com.stampgo.MyRecyclerAdapter
  kosmo.com.stampgo.MyRecyclerAdapter$1
  kosmo.com.stampgo.MyRecyclerAdapter$2
+kosmo/com/stampgo/SplashActivity.java
+ kosmo.com.stampgo.SplashActivity
+ kosmo.com.stampgo.SplashActivity$1

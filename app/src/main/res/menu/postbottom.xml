@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    >
+<item
+
+    android:id="@+id/postMap"
+    app:showAsAction="ifRoom"
+    android:enabled="true"
+    android:icon="@android:drawable/ic_dialog_map"
+    android:title="지도"
+
+/>
+    <item
+        android:background="@drawable/categorybutton"
+        android:id="@+id/postimage"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_menu_camera"
+        android:title="사진"
+
+        />
+</menu>

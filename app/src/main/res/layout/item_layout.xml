@@ -31,7 +31,7 @@ contentPadding:카드 뷰 내의 여백 설정
             android:layout_width="wrap_content"
             android:layout_height="100dp"
             android:layout_weight="5"
-            android:scaleType="centerCrop   "
+            android:scaleType="centerCrop"
             app:riv_corner_radius_top_left="20dp"
             app:riv_corner_radius_top_right="20dp"
             app:riv_oval="false"
@@ -104,7 +104,7 @@ contentPadding:카드 뷰 내의 여백 설정
 
             <TextView
                 android:id="@+id/itemRV1"
-                android:layout_width="match_parent"
+                android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
@@ -115,12 +115,28 @@ contentPadding:카드 뷰 내의 여백 설정
 
             <TextView
                 android:id="@+id/itemRV2"
-                android:layout_width="match_parent"
+                android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:layout_weight="5"
                 android:text="#"
                 android:textColor="@color/stampcolor"
                 android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="36dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitStart"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/heartoff"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:text="1"/>
+
         </LinearLayout>
     </FrameLayout>
 

@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ReviewFragment"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_margin="0dp"
+    android:padding="0dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/tripMenuBar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="top"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:layout_margin="0dp"
+        android:padding="0dp">
+
+        <ImageButton
+            android:id="@+id/menuButton"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/stampcolor"
+            android:scaleType="fitStart"
+            android:src="@drawable/menubutton"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+
+            />
+
+        <Button
+            android:id="@+id/postCategory"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:layout_weight="7"
+            android:background="@drawable/tripboardbutton"
+            android:shadowColor="#A8A8A8"
+
+            android:padding="0dp"
+
+            android:shadowDx="1"
+            android:shadowDy="1"
+
+            android:shadowRadius="5"
+            android:text="카테고리"
+            android:textColor="#FCFCFC"
+            android:textSize="14sp"
+
+
+            />
+
+        <LinearLayout
+            android:id="@+id/whiteMenu"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_gravity="top"
+          android:background="@color/stampcolor"
+            android:orientation="horizontal"
+            android:layout_margin="0dp"
+            android:layout_weight="8"
+            android:padding="0dp">
+
+            <Button
+                android:id="@+id/postNickName"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+
+                android:textColor="#0E53BF"
+
+                android:background="@drawable/categorybutton"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="7"
+                android:layout_margin="0dp"
+                android:padding="0dp"
+                android:text="닉네임"
+                />
+
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/writebutton"
+
+            android:text="x"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:translationY="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/postTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="제목"
+            android:gravity="center"
+            android:background="@drawable/categorybutton"
+            android:textColor="@color/stampsubcolor"
+            android:textSize="25sp"
+
+            />
+        <TextView
+            android:id="@+id/postDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2021.8.6"
+            android:gravity="center"
+            android:background="@drawable/categorybutton"
+            android:textColor="@color/stampsubcolor"
+            android:textSize="14sp"
+            />
+
+
+    </LinearLayout>
+
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@color/stampcolor"
+
+        android:translationY="90dp">
+
+
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/mapImage"
+        android:layout_gravity="bottom"
+        >
+        <ImageButton
+            android:id="@+id/postMap"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/tripboardbutton"
+            android:shadowColor="#A8A8A8"
+            android:src="@android:drawable/ic_dialog_map"
+            android:padding="0dp"
+
+            android:shadowDx="1"
+            android:shadowDy="1"
+
+            android:shadowRadius="5"
+            android:text="지도"
+            android:textColor="#FCFCFC"
+            android:textSize="14sp"
+
+
+            />
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+
+            android:background="@color/stampcolor">
+            <Button
+                android:id="@+id/postReply"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_margin="0dp"
+                android:background="@color/white"
+                android:shadowColor="#A8A8A8"
+                android:padding="0dp"
+
+                android:shadowDx="1"
+                android:shadowDy="1"
+
+                android:shadowRadius="5"
+                android:text="댓글"
+                android:textColor="@color/stampsubcolor"
+                android:textSize="14sp"
+
+
+                />
+            <Button
+                android:id="@+id/postReplyCnt"
+                android:layout_width="30dp"
+                android:background="@drawable/categorybutton"
+
+                android:layout_height="match_parent"
+                android:layout_margin="0dp"
+                android:shadowColor="#A8A8A8"
+                android:padding="0dp"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="5"
+                android:text="1"
+                android:layout_marginRight="50dp"
+                android:textColor="@color/stampsubcolor"
+                android:textSize="14sp"
+
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tripboardbutton"
+            >
+
+
+            <ImageButton
+
+                android:id="@+id/postLike"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_margin="0dp"
+                android:padding="0dp"
+                android:scaleType="center"
+
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:shadowColor="#A8A8A8"
+android:background="@color/stampcolor"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="5"
+                android:src="@drawable/heartoff"
+                android:text="좋아요"
+
+
+                android:textColor="@color/stampsubcolor"
+                android:textSize="14sp" />
+            <Button
+                android:id="@+id/postLikeCnt"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+
+                android:layout_margin="0dp"
+                android:background="@drawable/tripboardbutton"
+
+                android:shadowColor="#A8A8A8"
+                android:padding="0dp"
+
+                android:shadowDx="1"
+                android:shadowDy="1"
+
+                android:shadowRadius="5"
+                android:text="1"
+                android:textColor="@color/stampsubcolor"
+                android:textSize="14sp"
+
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           >
+
+            <ImageButton
+                android:id="@+id/postShare"
+                android:layout_width="50dp"
+                android:background="@drawable/categorybutton"
+
+                android:layout_height="50dp"
+                android:layout_margin="0dp"
+                android:shadowColor="#A8A8A8"
+                android:padding="0dp"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="5"
+android:scaleType="fitCenter"
+                android:scaleX="0.6"
+                android:scaleY="0.6"
+                android:src="@drawable/share"
+                android:layout_marginRight="50dp"
+                android:textColor="@color/stampsubcolor"
+                android:textSize="14sp"
+
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+</FrameLayout>

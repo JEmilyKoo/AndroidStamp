@@ -22,7 +22,7 @@
 16    <!-- test 2 -->
 17    <!-- test3 -->
 18    <application
-18-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:12:5-35:19
+18-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:12:5-36:19
 19        android:allowBackup="true"
 19-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:14:9-35
 20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -57,30 +57,33 @@
 34        <activity android:name="kosmo.com.stampgo.MapAcitivity" />
 34-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:24:9-50
 34-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:24:19-47
-35        <activity
-35-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:25:9-33:20
-36            android:name="kosmo.com.stampgo.SplashActivity"
-36-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:26:13-43
-37            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
-37-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:27:13-71
-38            <intent-filter>
-38-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:28:13-32:29
-39                <action android:name="android.intent.action.MAIN" />
-39-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:29:17-69
-39-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:29:25-66
-40
-41                <category android:name="android.intent.category.LAUNCHER" />
-41-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:31:17-77
-41-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:31:27-74
-42            </intent-filter>
-43        </activity>
-44
-45        <meta-data
-45-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:34:9-106
-46            android:name="com.kakao.sdk.AppKey"
-46-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:34:20-55
-47            android:value="ad747a9e4b06f185c274a1fdfb39c93b" />
-47-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:34:56-104
-48    </application>
-49
-50</manifest>
+35        <activity android:name="kosmo.com.stampgo.ProfileActivity" />
+35-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:25:9-53
+35-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:25:19-50
+36        <activity
+36-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:26:9-34:20
+37            android:name="kosmo.com.stampgo.SplashActivity"
+37-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:27:13-43
+38            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+38-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:28:13-71
+39            <intent-filter>
+39-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:29:13-33:29
+40                <action android:name="android.intent.action.MAIN" />
+40-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:30:17-69
+40-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:30:25-66
+41
+42                <category android:name="android.intent.category.LAUNCHER" />
+42-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:32:17-77
+42-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:32:27-74
+43            </intent-filter>
+44        </activity>
+45
+46        <meta-data
+46-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:35:9-106
+47            android:name="com.kakao.sdk.AppKey"
+47-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:35:20-55
+48            android:value="ad747a9e4b06f185c274a1fdfb39c93b" />
+48-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:35:56-104
+49    </application>
+50
+51</manifest>

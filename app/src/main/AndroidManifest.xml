@@ -22,6 +22,7 @@
         <activity android:name=".MemberActivity" /> <!-- MainActivity 에서 intent-filter 를 제거하고 SplashActivity 로 옮겨서 활성화 -->
         <activity android:name=".MainActivity" />
         <activity android:name=".MapAcitivity" />
+        <activity android:name=".ProfileActivity" />
         <activity
             android:name=".SplashActivity"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen">

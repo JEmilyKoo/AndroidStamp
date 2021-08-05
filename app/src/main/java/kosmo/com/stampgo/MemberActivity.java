@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
 
 import java.net.InetAddress;
 import java.net.NetworkInterface;
@@ -51,6 +52,8 @@ public class MemberActivity extends AppCompatActivity {
             String password = pwd.getText().toString();
             String password2 = pwd2.getText().toString();
             String username = name.getText().toString();
+
+
             if (!password.equals(password2)) {
                 new AlertDialog.Builder(MemberActivity.this)
                         .setIcon(android.R.drawable.ic_menu_info_details)
@@ -71,8 +74,10 @@ public class MemberActivity extends AppCompatActivity {
                     public void onResponse(Call<Integer> call, Response<Integer> response) {
                         if (response.isSuccessful()) {
                             Log.i("kosmo.com.stampgo", "일단 들어옴");
+                            Log.i("kosmo.com.stampgo", userid);
                             Log.i("kosmo.com.stampgo", password);
                             Log.i("kosmo.com.stampgo", password2);
+                            Log.i("kosmo.com.stampgo", username);
 
                             if (response.body() == 1) {
                                 new AlertDialog.Builder(MemberActivity.this)
@@ -80,7 +85,7 @@ public class MemberActivity extends AppCompatActivity {
                                         .setTitle("회원가입 결과")
                                         .setMessage("회원가입 성공 했습니다.")
                                         .show();
-                                Intent intent = new Intent(MemberActivity.this, LoginActivity.class);
+                                Intent intent = new Intent(MemberActivity.this, ProfileActivity.class);
                                 startActivity(intent);
 
                             } else {
@@ -111,7 +116,6 @@ public class MemberActivity extends AppCompatActivity {
             pwd2 = (EditText) findViewById(R.id.passwordInput2);
             name = (EditText) findViewById(R.id.nameInput);
             btnJoin = (Button) findViewById(R.id.registMember);
-
         }
     }
 

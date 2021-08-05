@@ -12,6 +12,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import java.net.InetAddress;
@@ -32,6 +34,7 @@ public class LoginActivity extends AppCompatActivity {
     private EditText id;
     private EditText pwd;
     private Button btnLogin;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,7 +66,7 @@ public class LoginActivity extends AppCompatActivity {
                         Log.i("kosmo.com.stampgo", "결과값: "+member.getId());
                         if(member.getId() != null){
 
-                            Intent intent = new Intent(LoginActivity.this,ProfileActivity.class);
+                            Intent intent = new Intent(LoginActivity.this,HomeActivity.class);
                             startActivity(intent);
 
                             SharedPreferences preferences = getSharedPreferences("loginInfo",MODE_PRIVATE);

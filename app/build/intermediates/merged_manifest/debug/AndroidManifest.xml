@@ -32,6 +32,7 @@
         <activity android:name="kosmo.com.stampgo.MemberActivity" /> <!-- MainActivity 에서 intent-filter 를 제거하고 SplashActivity 로 옮겨서 활성화 -->
         <activity android:name="kosmo.com.stampgo.MainActivity" />
         <activity android:name="kosmo.com.stampgo.MapAcitivity" />
+        <activity android:name="kosmo.com.stampgo.ProfileActivity" />
         <activity
             android:name="kosmo.com.stampgo.SplashActivity"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >

@@ -12,7 +12,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.ImageButton;
 
 import java.util.List;
 import java.util.Vector;
@@ -25,10 +24,11 @@ import retrofit2.Retrofit;
 import retrofit2.converter.jackson.JacksonConverterFactory;
 public class ReviewFragment extends Fragment {
     private String TAG = "ReviewFragment";
-    private Context mContext =ReviewFragment.this.getContext();
+    private Context mContext =ReviewFragment.this.getActivity();
     private ViewGroup mainLayout;
     private ViewGroup viewLayout;
     private ViewGroup sideLayout;
+    private ViewGroup rootView;
     private Boolean isMenuShow = false;
     private Boolean isExitFlag = false;
 
@@ -58,7 +58,7 @@ public class ReviewFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_review,container,false);
+        rootView = (ViewGroup) inflater.inflate(R.layout.fragment_review,container,false);
         //mLayoutManager = new LinearLayoutManager(rootView.getContext());
         //recyclerView.setLayoutManager(mLayoutManager);
         //위젯 얻기
@@ -143,41 +143,21 @@ public class ReviewFragment extends Fragment {
        //레이아웃 설정-세로방향
         //recyclerView.setLayoutManager(new LinearLayoutManager(this));
         //가로방향
-        rootView.findViewById(R.id.btn_menu).setOnClickListener((View.OnClickListener) this);
 
-        mainLayout = rootView.findViewById(R.id.fragment_review);
-        viewLayout = rootView.findViewById(R.id.fl_silde);
-        sideLayout = rootView.findViewById(R.id.view_sildebar);
-        ImageButton btn_menu = rootView.findViewById(R.id.btn_menu);
-        /*
-        btn_menu
-        @Override
-        public void onClick(View view) {
-
-            switch (view.getId()){
-
-                case R.id.btn_menu :
-
-                    showMenu();
-                    break;
-            }
-        }
-
-         */
-        addSideView();
+     //   addSideView();
         //recyclerView.setLayoutManager(new LinearLayoutManager(this,RecyclerView.HORIZONTAL,false));
         return rootView;
 
         //   return inflater.inflate(R.layout.fragment_menu, container, false); // Inflate the layout for this fragment
         //return inflater.inflate(R.layout.fragment_review, container, false);
-
-
     }
+
     private void addSideView(){
 
-        SideBarView sidebar = new SideBarView(mContext);
+        SideBarView sidebar;
+        sidebar = new SideBarView(this.getActivity());
         sideLayout.addView(sidebar);
-
+/*
         viewLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -200,9 +180,9 @@ public class ReviewFragment extends Fragment {
                 closeMenu();
             }
         });
+
+        */
     }
-
-
 
     public void closeMenu(){
 
@@ -218,18 +198,27 @@ public class ReviewFragment extends Fragment {
             }
         }, 450);
     }
-/*
     public void showMenu(){
 
         isMenuShow = true;
-        Animation slide = AnimationUtils.loadAnimation(this, R.anim.sidebar_show);
+        Animation slide = AnimationUtils.loadAnimation(mContext, R.anim.sidebar_show);
         sideLayout.startAnimation(slide);
         viewLayout.setVisibility(View.VISIBLE);
         viewLayout.setEnabled(true);
         mainLayout.setEnabled(false);
         Log.e(TAG, "메뉴버튼 클릭");
     }
-*/
 
+    private void init(){
+
+        rootView.findViewById(R.id.btn_menu).setOnClickListener((View.OnClickListener) mContext);
+
+        mainLayout =  rootView.findViewById(R.id.fragment_review);
+        viewLayout =  rootView.findViewById(R.id.fl_silde);
+        sideLayout =  rootView.findViewById(R.id.view_sildebar);
 
     }
+
+
+
+     }

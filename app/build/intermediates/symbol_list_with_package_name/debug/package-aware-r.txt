@@ -31,6 +31,8 @@ anim fragment_fast_out_extra_slow_in
 anim mtrl_bottom_sheet_slide_in
 anim mtrl_bottom_sheet_slide_out
 anim mtrl_card_lowers_interpolator
+anim sidebar_hidden
+anim sidebar_show
 animator design_appbar_state_list_animator
 animator design_fab_hide_motion_spec
 animator design_fab_show_motion_spec
@@ -1875,6 +1877,7 @@ id blocking
 id bottom
 id bounce
 id btn_cancel
+id btn_menu
 id btn_side_level_1
 id button
 id buttonNearStamp
@@ -1972,6 +1975,7 @@ id flip
 id floating
 id forever
 id fragment_container_view_tag
+id fragment_review
 id ghost_view
 id ghost_view_holder
 id gone
@@ -1997,6 +2001,7 @@ id image
 id imageView
 id imageView6
 id info
+id introInput
 id invisible
 id inward
 id italic
@@ -2089,6 +2094,7 @@ id navigation_bar_item_large_label_view
 id navigation_bar_item_small_label_view
 id navigation_header_container
 id never
+id nickNameInput
 id noScroll
 id none
 id normal
@@ -2126,9 +2132,15 @@ id postReplyCnt
 id postShare
 id postTitle
 id postimage
+id profileMember
 id progress_circular
 id progress_horizontal
 id radio
+id radioButton1
+id radioButton2
+id radioButton3
+id radioButton4
+id radioGroup
 id ratio
 id recommend
 id rectangles
@@ -2346,6 +2358,7 @@ layout activity_main
 layout activity_main2
 layout activity_map
 layout activity_member
+layout activity_profile
 layout activity_splash
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -3433,8 +3446,6 @@ styleable ViewBackgroundHelper android_background backgroundTint backgroundTintM
 styleable ViewPager2 android_orientation
 styleable ViewStubCompat android_id android_layout android_inflatedId
 xml activity_splash_scene
-xml sidebar_hidden
-xml sidebar_show
 xml standalone_badge
 xml standalone_badge_gravity_bottom_end
 xml standalone_badge_gravity_bottom_start

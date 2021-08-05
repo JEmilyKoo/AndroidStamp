@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_foreground.png"
-    },
-    {
         "merged": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_person_24.xml.flat",
         "source": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\src\\main\\res\\drawable\\ic_baseline_person_24.xml"
+    },
+    {
+        "merged": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_foreground.png"
     },
     {
         "merged": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_photo1.jpg.flat",
@@ -20,28 +20,20 @@
         "source": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\src\\main\\res\\drawable\\ic_baseline_beenhere_24.xml"
     },
     {
-        "merged": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\build\\intermediates\\res\\merged\\debug\\xml_sidebar_show.xml.flat",
-        "source": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\src\\main\\res\\xml\\sidebar_show.xml"
-    },
-    {
         "merged": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\build\\intermediates\\res\\merged\\debug\\xml_sidebar_hidden.xml.flat",
-        "source": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\src\\main\\res\\xml\\sidebar_hidden.xml"
-    },
-    {
-        "merged": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+        "merged": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
     },
     {
         "merged": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_select_handler.xml.flat",
         "source": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\src\\main\\res\\drawable\\select_handler.xml"
     },
     {
-        "merged": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
+        "merged": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
         "merged": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_heartoff.png.flat",
@@ -136,6 +128,10 @@
         "source": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\build\\intermediates\\res\\merged\\debug\\anim_sidebar_hidden.xml.flat",
+        "source": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\src\\main\\res\\anim\\sidebar_hidden.xml"
+    },
+    {
         "merged": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_photo3.jpg.flat",
         "source": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\src\\main\\res\\drawable-v24\\photo3.jpg"
     },
@@ -168,16 +164,20 @@
         "source": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_splash.xml.flat",
-        "source": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\src\\main\\res\\layout\\activity_splash.xml"
-    },
-    {
         "merged": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_writebutton.xml.flat",
         "source": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\src\\main\\res\\drawable\\writebutton.xml"
     },
     {
+        "merged": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_splash.xml.flat",
+        "source": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\src\\main\\res\\layout\\activity_splash.xml"
+    },
+    {
         "merged": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_rounded.png.flat",
         "source": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\src\\main\\res\\drawable-v24\\rounded.png"
+    },
+    {
+        "merged": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_profile.xml.flat",
+        "source": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\src\\main\\res\\layout\\activity_profile.xml"
     },
     {
         "merged": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_tripboardbutton.xml.flat",
@@ -188,16 +188,16 @@
         "source": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\src\\main\\res\\layout\\sidebar.xml"
     },
     {
+        "merged": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_post.xml.flat",
+        "source": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\src\\main\\res\\layout\\fragment_post.xml"
+    },
+    {
         "merged": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cursor_drawable.xml.flat",
         "source": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\src\\main\\res\\drawable\\cursor_drawable.xml"
     },
     {
         "merged": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_layout.xml.flat",
         "source": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\src\\main\\res\\layout\\item_layout.xml"
-    },
-    {
-        "merged": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_post.xml.flat",
-        "source": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\src\\main\\res\\layout\\fragment_post.xml"
     },
     {
         "merged": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_home.xml.flat",
@@ -210,6 +210,10 @@
     {
         "merged": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\build\\intermediates\\res\\merged\\debug\\anim_sidebar_show.xml.flat",
+        "source": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\src\\main\\res\\anim\\sidebar_show.xml"
     },
     {
         "merged": "C:\\KJE\\Workspace\\Android\\AndroidStamp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-ldpi_ic_launcher.png.flat",

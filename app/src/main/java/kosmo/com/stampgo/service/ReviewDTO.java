@@ -21,6 +21,9 @@ public class ReviewDTO {
 
     //rvLike 추가
     private Date rvlDate;
+    public ReviewDTO() {
+
+    }
 
 
     //rvCmnt 추가
@@ -194,6 +197,29 @@ public class ReviewDTO {
     }
 
     public void setImage(String image) {
+        this.image = image;
+    }
+
+    public ReviewDTO(String rvNo, String nickName, String rvTitle, String rvCtt, int rvLikeCnt, Date rvDate, String rvCategory1, String rvCategory2, String rvLat, String rvLng, String rvVisitCnt, String rvFile, int rvLikeCheck, Date rvlDate, String rvcNo, String rvCmnt, Date rvcDate, String fullName, String rvfdate, String image) {
+        this.rvNo = rvNo;
+        this.nickName = nickName;
+        this.rvTitle = rvTitle;
+        this.rvCtt = rvCtt;
+        this.rvLikeCnt = rvLikeCnt;
+        this.rvDate = rvDate;
+        this.rvCategory1 = rvCategory1;
+        this.rvCategory2 = rvCategory2;
+        this.rvLat = rvLat;
+        this.rvLng = rvLng;
+        this.rvVisitCnt = rvVisitCnt;
+        this.rvFile = rvFile;
+        this.rvLikeCheck = rvLikeCheck;
+        this.rvlDate = rvlDate;
+        this.rvcNo = rvcNo;
+        this.rvCmnt = rvCmnt;
+        this.rvcDate = rvcDate;
+        this.fullName = fullName;
+        this.rvfdate = rvfdate;
         this.image = image;
     }
 }

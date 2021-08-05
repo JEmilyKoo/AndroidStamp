@@ -1765,6 +1765,13 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable photo1
+drawable photo2
+drawable photo3
+drawable photo4
+drawable photo5
+drawable photo6
+drawable recommend
 drawable rounded
 drawable select_handler
 drawable stamplogowhite300px
@@ -1981,8 +1988,10 @@ id info
 id invisible
 id inward
 id italic
-id itemCtt
 id itemImage
+id itemNickName
+id itemRV1
+id itemRV2
 id itemTitle
 id item_touch_helper_previous_elevation
 id jumpToEnd
@@ -2096,6 +2105,7 @@ id progress_circular
 id progress_horizontal
 id radio
 id ratio
+id recommend
 id rectangles
 id recyclerView
 id registMember

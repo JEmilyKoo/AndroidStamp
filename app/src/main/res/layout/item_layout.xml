@@ -12,7 +12,7 @@ contentPadding:카드 뷰 내의 여백 설정
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="350dp"
-    android:layout_height="250dp"
+    android:layout_height="200dp"
     android:id="@+id/cardview"
     android:layout_margin="20dp"
     app:cardUseCompatPadding="true"
@@ -29,56 +29,103 @@ contentPadding:카드 뷰 내의 여백 설정
         <com.makeramen.roundedimageview.RoundedImageView
             android:id="@+id/itemImage"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="100dp"
             android:layout_weight="5"
-            android:scaleType="centerCrop"
+            android:scaleType="centerCrop   "
             app:riv_corner_radius_top_left="20dp"
             app:riv_corner_radius_top_right="20dp"
             app:riv_oval="false"
             android:alpha="33"
+
             android:src="@drawable/rounded"/>
 
-<LinearLayout
+<RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
     android:orientation="vertical"
     >
-    <TextView
-        android:layout_margin="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:id="@+id/itemTitle"
-        android:textSize="18sp"
-        android:textColor="@color/black"
-        />
-    <TextView
-        android:layout_margin="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:textSize="18sp"
-        android:id="@+id/itemCtt"
-        android:textColor="@color/black"
-        android:text="내용물내용물내용물내용물내용물내용물내용물내용물내용물내용물내용물내용물"
-        />
-    <!--왜안돌아감-->
-    <TextView
-        android:layout_margin="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:textSize="18sp"
-        android:textColor="@color/black"
-        android:text="@string/app_name"
-        />
-</LinearLayout>
 
+    <TextView
+        android:id="@+id/itemTitle"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1"
+        android:shadowColor="#FFFFFF"
+        android:shadowDx="7.0"
+        android:shadowDy="7.0"
+        android:shadowRadius="10.0"
+        android:text="dddd"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:translationX="50dp" />
+
+    <TextView
+        android:id="@+id/itemNickName"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:text="구구구구"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:translationY="-20dp" />
+
+    <ImageView
+        android:id="@+id/recommend"
+        android:layout_width="73dp"
+        android:layout_height="63dp"
+        app:srcCompat="@drawable/recommend"
+        android:alpha="0"
+
+        />
+
+
+    <!--왜안돌아감-->
+
+</RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:translationY="20dp">
+
+            <TextView
+                android:id="@+id/itemRV1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="5"
+                android:text="#"
+                android:textColor="@color/stampcolor"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/itemRV2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:text="#"
+                android:textColor="@color/stampcolor"
+                android:textSize="18sp" />
+        </LinearLayout>
     </FrameLayout>
 
 
-        <!--https://github.com/vinc3m1/RoundedImageView-->
+    <!--https://github.com/vinc3m1/RoundedImageView-->
 
 
 

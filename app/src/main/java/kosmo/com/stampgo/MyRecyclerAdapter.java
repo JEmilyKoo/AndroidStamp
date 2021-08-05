@@ -1,23 +1,27 @@
 package kosmo.com.stampgo;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.util.Base64;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.lang.reflect.Field;
 import java.util.List;
+import kosmo.com.stampgo.service.ReviewDTO;
 
 public class MyRecyclerAdapter extends RecyclerView.Adapter {
 
-    private Context context;
-    private List<Item> items;
-
-    public MyRecyclerAdapter(Context context, List<Item> items) {
+    private final Context context;
+    private final List<ReviewDTO> items;
+    public MyRecyclerAdapter(Context context, List<ReviewDTO> items) {
         this.context = context;
         this.items = items;
     }
@@ -28,19 +32,56 @@ public class MyRecyclerAdapter extends RecyclerView.Adapter {
         //아이템뷰 전개
         View itemView=LayoutInflater.from(context).inflate(R.layout.item_layout,null);
         //뷰홀더 객체 생성후 반환
-
-
         return new MyViewHolder(itemView);
     }
+
+
+
+
+
     //데이터 바인딩
     @Override
     public void onBindViewHolder(@NonNull  RecyclerView.ViewHolder holder, int position) {
-        //position인덱스의 데이타
-        Item item = items.get(position);
+        //position 인덱스의 데이타
+        ReviewDTO item = items.get(position);
+
 
         //위의 데이터로 바인딩
-        ((MyViewHolder)holder).itemImage.setImageResource(item.getItemImageResId());
-        ((MyViewHolder)holder).itemTitle.setText(item.getItemTitle());
+        if (item.getImage()!=null){
+            System.out.println("값은 있다니까");
+            String encodedDataString =item.getImage();
+            encodedDataString = encodedDataString.substring(encodedDataString.indexOf(",")  + 1);
+            byte[] imageAsBytes = Base64.decode(encodedDataString, Base64.DEFAULT);
+            Bitmap decodedBitmap = BitmapFactory.decodeByteArray(imageAsBytes, 0, imageAsBytes.length);
+            ((MyViewHolder)holder).itemImage.setImageBitmap(decodedBitmap);
+
+        }
+     int rvNo =      Integer.parseInt(item.getRvNo());
+
+        if(510>rvNo && rvNo>500){
+            rvNo=rvNo-500;
+            String photo = "photo"+Integer.toString(rvNo);
+            Class<R.drawable> drawable = R.drawable.class;
+            try { Field field;
+            field = drawable.getField(photo);
+            int r; r = field.getInt(null);
+System.out.println(item.getRvNo());
+                ((MyViewHolder)holder).recommend.setAlpha(1f);
+
+                ((MyViewHolder)holder).itemImage.setImageResource(r);}
+            catch (Exception e) {}
+           // int lid = this.getResources().getIdentifier(photo, "drawable", this.getPackageName());
+            //((MyViewHolder)holder).itemImage.setImageResource(lid);
+            //   ((MyViewHolder)holder).itemImage.setImageResource(photo);
+        }
+if(item.getRvCategory1()!=null) {
+    ((MyViewHolder) holder).itemRv1.setText("#"+item.getRvCategory1());
+}
+if(item.getRvCategory2()!=null) {
+    ((MyViewHolder) holder).itemRv2.setText("#"+item.getRvCategory2());
+}
+((MyViewHolder)holder).itemNickName.setText(item.getNickName());
+        ((MyViewHolder)holder).itemTitle.setText(item.getRvTitle());
         ((MyViewHolder)holder).itemTitle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -53,8 +94,8 @@ public class MyRecyclerAdapter extends RecyclerView.Adapter {
         ((MyViewHolder)holder).itemImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(flag[0] ==true) {
-                    Toast.makeText(context, item.getItemTitle(), Toast.LENGTH_SHORT).show();
+                if(flag[0]) {
+                    Toast.makeText(context, item.getRvTitle(), Toast.LENGTH_SHORT).show();
                     ((MyViewHolder) holder).itemImage.setAlpha(0.2f);
                     flag[0] =false;
                 }
@@ -69,30 +110,7 @@ public class MyRecyclerAdapter extends RecyclerView.Adapter {
 
         });
 
-        /*
-        ((MyViewHolder)holder).cardView.setOnTouchListener(new View.OnTouchListener(){
 
-            public boolean onTouch(View view, MotionEvent motionEvent) {
-                int action = motionEvent.getAction();
-
-                float curX = motionEvent.getX();
-                float curY = motionEvent.getY();
-
-                if (action == MotionEvent.ACTION_DOWN){
-                    System.out.println("손가락 눌림 : "+curX+", "+curY);
-                }
-                else if (action == MotionEvent.ACTION_MOVE){
-                    System.out.println("손가락 움직임 : "+curX+", "+curY);
-                }
-                else if (action == MotionEvent.ACTION_UP){
-                    System.out.println("손가락 뗌 : "+curX+", "+curY);
-                }
-                return true;
-            }
-        });
-
-
-         */
     }
     @Override
     public int getItemCount() {

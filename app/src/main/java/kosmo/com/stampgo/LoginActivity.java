@@ -29,7 +29,6 @@ import retrofit2.converter.jackson.JacksonConverterFactory;
 
 public class LoginActivity extends AppCompatActivity {
 
-
     private EditText id;
     private EditText pwd;
     private Button btnLogin;
@@ -51,7 +50,7 @@ public class LoginActivity extends AppCompatActivity {
             String password = pwd.getText().toString();
 
             StampService stampService = new Retrofit.Builder()
-                    .baseUrl("http://10.0.2.2:9090/exer/")
+                    .baseUrl("http://192.168.0.20:9090/exer/")
                     .addConverterFactory(JacksonConverterFactory.create())
                     .build()
                     .create(StampService.class);
@@ -64,14 +63,13 @@ public class LoginActivity extends AppCompatActivity {
                         Log.i("kosmo.com.stampgo", "결과값: "+member.getId());
                         if(member.getId() != null){
 
-                            Intent intent = new Intent(LoginActivity.this,HomeActivity.class);
+                            Intent intent = new Intent(LoginActivity.this,ProfileActivity.class);
                             startActivity(intent);
 
                             SharedPreferences preferences = getSharedPreferences("loginInfo",MODE_PRIVATE);
                             SharedPreferences.Editor editor =preferences.edit();
 
-                            editor.putString("id",member.getId());
-                            editor.putString("pwd",member.getPwd());
+                            editor.putString("nickName",member.getNickName());
                             editor.commit();
                         }/////////로그인 성공
                         else{

@@ -44,6 +44,9 @@ kosmo/com/stampgo/MyRecyclerAdapter.java
  kosmo.com.stampgo.MyRecyclerAdapter$2
 kosmo/com/stampgo/Item.java
  kosmo.com.stampgo.Item
+kosmo/com/stampgo/ProfileActivity.java
+ kosmo.com.stampgo.ProfileActivity
+ kosmo.com.stampgo.ProfileActivity$1
 kosmo/com/stampgo/service/MemberDTO.java
  kosmo.com.stampgo.service.MemberDTO
 kosmo/com/stampgo/SplashActivity.java

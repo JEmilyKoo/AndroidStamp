@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/stampcolor"
+    tools:context=".MemberActivity">
+
+    <EditText
+        android:id="@+id/nickNameInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:backgroundTint="@color/white"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="사용할 닉네임"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textCursorDrawable="@drawable/cursor_drawable"
+        android:textSelectHandle="@drawable/select_handler"
+        android:textSelectHandleLeft="@drawable/select_handler"
+        android:textSelectHandleRight="@drawable/select_handler"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:importantForAutofill="no"
+        tools:targetApi="o"
+        android:id="@+id/introInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/white"
+        android:drawableStart="@drawable/ic_baseline_https_24"
+        android:drawableLeft="@drawable/ic_baseline_https_24"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="한줄 소개"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textCursorDrawable="@drawable/cursor_drawable"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/nickNameInput"
+        app:layout_constraintStart_toStartOf="@+id/nickNameInput"
+        app:layout_constraintTop_toBottomOf="@+id/nickNameInput" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:translationX="140dp"
+        android:translationY="370dp"
+        tools:layout_editor_absoluteX="-30dp"
+        tools:layout_editor_absoluteY="-30dp">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="프로필 1"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="102dp"
+            tools:layout_editor_absoluteY="564dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="프로필 2"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="102dp"
+            tools:layout_editor_absoluteY="611dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="프로필 3"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="223dp"
+            tools:layout_editor_absoluteY="564dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="프로필 4"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="223dp"
+            tools:layout_editor_absoluteY="611dp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/profileMember"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="가입하기"
+        android:textColor="@color/stampcolor"
+        android:translationY="100dp"
+        app:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/introInput"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/introInput"
+        app:layout_constraintTop_toBottomOf="@+id/introInput" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/stamplogowhite300px" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

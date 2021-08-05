@@ -7,12 +7,38 @@ public class MemberDTO {
     private String name;
     private int followCheck;
     private String nickName;
+    private String pr;
     private String mail;
     private String trvprpns;
     private String gender;
     private String birth;
     private String phone;
     private String prfImage;
+    private String openprf;
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getPwd() {
+        return pwd;
+    }
+
+    public void setPwd(String pwd) {
+        this.pwd = pwd;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public int getFollowCheck() {
         return followCheck;
@@ -28,6 +54,14 @@ public class MemberDTO {
 
     public void setNickName(String nickName) {
         this.nickName = nickName;
+    }
+
+    public String getPr() {
+        return pr;
+    }
+
+    public void setPr(String pr) {
+        this.pr = pr;
     }
 
     public String getMail() {
@@ -78,28 +112,11 @@ public class MemberDTO {
         this.prfImage = prfImage;
     }
 
-    public String getId() {
-        return id;
+    public String getOpenprf() {
+        return openprf;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setOpenprf(String openprf) {
+        this.openprf = openprf;
     }
-
-    public String getPwd() {
-        return pwd;
-    }
-
-    public void setPwd(String pwd) {
-        this.pwd = pwd;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
 }

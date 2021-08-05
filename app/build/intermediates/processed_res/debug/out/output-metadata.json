@@ -1,7 +1,7 @@
 {
   "version": 2,
   "artifactType": {
-    "type": "APK",
+    "type": "PROCESSED_RES",
     "kind": "Directory"
   },
   "applicationId": "kosmo.com.stampgo",
@@ -17,7 +17,7 @@
       ],
       "versionCode": 1,
       "versionName": "1.0",
-      "outputFile": "app-x86-debug.apk"
+      "outputFile": "resources-x86Debug.ap_"
     }
   ]
 }

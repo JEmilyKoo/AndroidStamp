@@ -1,12 +1,19 @@
 package kosmo.com.stampgo;
+import android.content.Context;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import android.os.Handler;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageButton;
+
 import java.util.List;
 import java.util.Vector;
 import kosmo.com.stampgo.service.ReviewDTO;
@@ -17,6 +24,16 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.jackson.JacksonConverterFactory;
 public class ReviewFragment extends Fragment {
+    private String TAG = "ReviewFragment";
+    private Context mContext =ReviewFragment.this.getContext();
+    private ViewGroup mainLayout;
+    private ViewGroup viewLayout;
+    private ViewGroup sideLayout;
+    private Boolean isMenuShow = false;
+    private Boolean isExitFlag = false;
+
+
+
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
     private RecyclerView recyclerView;
@@ -126,10 +143,93 @@ public class ReviewFragment extends Fragment {
        //레이아웃 설정-세로방향
         //recyclerView.setLayoutManager(new LinearLayoutManager(this));
         //가로방향
+        rootView.findViewById(R.id.btn_menu).setOnClickListener((View.OnClickListener) this);
+
+        mainLayout = rootView.findViewById(R.id.fragment_review);
+        viewLayout = rootView.findViewById(R.id.fl_silde);
+        sideLayout = rootView.findViewById(R.id.view_sildebar);
+        ImageButton btn_menu = rootView.findViewById(R.id.btn_menu);
+        /*
+        btn_menu
+        @Override
+        public void onClick(View view) {
+
+            switch (view.getId()){
+
+                case R.id.btn_menu :
+
+                    showMenu();
+                    break;
+            }
+        }
+
+         */
+        addSideView();
         //recyclerView.setLayoutManager(new LinearLayoutManager(this,RecyclerView.HORIZONTAL,false));
         return rootView;
 
         //   return inflater.inflate(R.layout.fragment_menu, container, false); // Inflate the layout for this fragment
         //return inflater.inflate(R.layout.fragment_review, container, false);
+
+
     }
-}
+    private void addSideView(){
+
+        SideBarView sidebar = new SideBarView(mContext);
+        sideLayout.addView(sidebar);
+
+        viewLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+        sidebar.setEventListener(new SideBarView.EventListener() {
+
+            @Override
+            public void btnCancel() {
+                Log.e(TAG, "btnCancel");
+                closeMenu();
+            }
+
+            @Override
+            public void btnLevel1() {
+                Log.e(TAG, "btnLevel1");
+
+                closeMenu();
+            }
+        });
+    }
+
+
+
+    public void closeMenu(){
+
+        isMenuShow = false;
+        Animation slide = AnimationUtils.loadAnimation(mContext, R.anim.sidebar_hidden);
+        sideLayout.startAnimation(slide);
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                viewLayout.setVisibility(View.GONE);
+                viewLayout.setEnabled(false);
+                mainLayout.setEnabled(true);
+            }
+        }, 450);
+    }
+/*
+    public void showMenu(){
+
+        isMenuShow = true;
+        Animation slide = AnimationUtils.loadAnimation(this, R.anim.sidebar_show);
+        sideLayout.startAnimation(slide);
+        viewLayout.setVisibility(View.VISIBLE);
+        viewLayout.setEnabled(true);
+        mainLayout.setEnabled(false);
+        Log.e(TAG, "메뉴버튼 클릭");
+    }
+*/
+
+
+    }

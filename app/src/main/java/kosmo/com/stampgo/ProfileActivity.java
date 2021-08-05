@@ -21,10 +21,19 @@ public class ProfileActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_member);
+        setContentView(R.layout.activity_profile);
         initView();
 
         btnProfile.setOnClickListener(listener);
+/*
+        btnProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+*/
     }
 
     View.OnClickListener listener = new View.OnClickListener() {

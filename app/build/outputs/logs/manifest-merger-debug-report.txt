@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:2:1-37:12
-INJECTED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:2:1-37:12
-INJECTED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:2:1-37:12
-INJECTED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:2:1-37:12
+ADDED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:2:1-38:12
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\rnwjd\.gradle\caches\transforms-2\files-2.1\10046aad9e73cbf22653afacdcab8838\material-1.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\rnwjd\.gradle\caches\transforms-2\files-2.1\0db51bfebffdf02cab6c3906aa1040ae\constraintlayout-2.0.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.3.0] C:\Users\rnwjd\.gradle\caches\transforms-2\files-2.1\77c7b97873973e149b09819f46c0a153\appcompat-1.3.0\AndroidManifest.xml:17:1-24:12
@@ -46,20 +46,20 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\User
 MERGED from [androidx.print:print:1.0.0] C:\Users\rnwjd\.gradle\caches\transforms-2\files-2.1\f8503f66578d12caa389b09e1e5eca48\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\rnwjd\.gradle\caches\transforms-2\files-2.1\a81ff3a6f4fe4cdba627ce49c2369465\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\rnwjd\.gradle\caches\transforms-2\files-2.1\8b1826e082b884f9fc593d27a9580a45\annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:2:1-37:12
-INJECTED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:2:1-37:12
-INJECTED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:2:1-38:12
 	package
 		ADDED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:3:5-32
 		INJECTED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml
 		INJECTED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml
-		ADDED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:2:1-37:12
+		ADDED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:2:1-38:12
 		INJECTED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml
-		ADDED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:2:1-37:12
+		ADDED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:2:1-38:12
 		INJECTED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:2:11-69
@@ -72,7 +72,7 @@ ADDED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xm
 	android:name
 		ADDED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:6:22-76
 application
-ADDED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:12:5-35:19
+ADDED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:12:5-36:19
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\rnwjd\.gradle\caches\transforms-2\files-2.1\10046aad9e73cbf22653afacdcab8838\material-1.4.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\rnwjd\.gradle\caches\transforms-2\files-2.1\10046aad9e73cbf22653afacdcab8838\material-1.4.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\rnwjd\.gradle\caches\transforms-2\files-2.1\0db51bfebffdf02cab6c3906aa1040ae\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
@@ -117,28 +117,32 @@ activity#kosmo.com.stampgo.MapAcitivity
 ADDED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:24:9-50
 	android:name
 		ADDED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:24:19-47
+activity#kosmo.com.stampgo.ProfileActivity
+ADDED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:25:9-53
+	android:name
+		ADDED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:25:19-50
 activity#kosmo.com.stampgo.SplashActivity
-ADDED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:25:9-33:20
+ADDED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:26:9-34:20
 	android:theme
-		ADDED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:27:13-71
+		ADDED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:28:13-71
 	android:name
-		ADDED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:26:13-43
+		ADDED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:27:13-43
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:28:13-32:29
+ADDED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:29:13-33:29
 action#android.intent.action.MAIN
-ADDED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:29:17-69
+ADDED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:30:17-69
 	android:name
-		ADDED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:29:25-66
+		ADDED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:30:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:31:17-77
+ADDED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:32:17-77
 	android:name
-		ADDED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:31:27-74
+		ADDED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:32:27-74
 meta-data#com.kakao.sdk.AppKey
-ADDED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:34:9-106
+ADDED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:35:9-106
 	android:value
-		ADDED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:34:56-104
+		ADDED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:35:56-104
 	android:name
-		ADDED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:34:20-55
+		ADDED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:35:20-55
 uses-sdk
 INJECTED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml

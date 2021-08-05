@@ -5,22 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.net.wifi.WifiManager;
 import android.os.Bundle;
-import android.text.format.Formatter;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
-import android.widget.TextView;
-
-import java.net.InetAddress;
-import java.net.NetworkInterface;
-import java.util.Collections;
-import java.util.List;
-
 import kosmo.com.stampgo.service.MemberDTO;
 import kosmo.com.stampgo.service.StampService;
 import retrofit2.Call;
@@ -34,7 +23,6 @@ public class LoginActivity extends AppCompatActivity {
     private EditText id;
     private EditText pwd;
     private Button btnLogin;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

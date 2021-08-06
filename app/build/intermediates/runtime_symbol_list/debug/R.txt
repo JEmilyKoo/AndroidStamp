@@ -2157,6 +2157,7 @@ int id right_icon 0x7f09016b
 int id right_side 0x7f09016c
 int id rounded 0x7f09016d
 int id row_index_key 0x7f09016e
+int id rvLikeCnt 0x7f0901fa
 int id save_non_transition_alpha 0x7f09016f
 int id save_overlay_view 0x7f090170
 int id sawtooth 0x7f090171

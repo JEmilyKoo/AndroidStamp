@@ -19,6 +19,8 @@ public class MyViewHolder extends RecyclerView.ViewHolder {
     TextView itemRv2;
     TextView itemNickName;
     ImageView recommend;
+    TextView rvLikeCnt;
+
     //이벤트 처리용
     //인자로 전개된 아이템뷰를 받는다
     public MyViewHolder(@NonNull View itemView) {
@@ -30,6 +32,8 @@ public class MyViewHolder extends RecyclerView.ViewHolder {
         itemRv2 =itemView.findViewById(R.id.itemRV2);
         recommend = itemView.findViewById(R.id.recommend);
         itemNickName =itemView.findViewById(R.id.itemNickName);
+
+        rvLikeCnt =itemView.findViewById(R.id.rvLikeCnt);
 
     }
 }

@@ -1,9 +1,12 @@
 package kosmo.com.stampgo;
 
 import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.util.Base64;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,11 +14,16 @@ import android.widget.Toast;
 
 import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.lang.reflect.Field;
 import java.util.List;
+
+import kosmo.com.stampgo.service.MemberDTO;
 import kosmo.com.stampgo.service.ReviewDTO;
+import kosmo.com.stampgo.service.ReviewService;
+import kosmo.com.stampgo.service.StampService;
 
 public class MyRecyclerAdapter extends RecyclerView.Adapter {
 
@@ -56,8 +64,10 @@ public class MyRecyclerAdapter extends RecyclerView.Adapter {
             ((MyViewHolder)holder).itemImage.setImageBitmap(decodedBitmap);
 
         }
-     int rvNo = Integer.parseInt(item.getRvNo());
-
+     int rvNo =Integer.parseInt(item.getRvNo());
+    if(item.getRvLikeCnt()>=2){
+        ((MyViewHolder)holder).recommend.setAlpha(1f);
+    }
         if(510>rvNo && rvNo>500){
             rvNo=rvNo-500;
             String photo = "photo"+Integer.toString(rvNo);
@@ -66,7 +76,6 @@ public class MyRecyclerAdapter extends RecyclerView.Adapter {
             field = drawable.getField(photo);
             int r; r = field.getInt(null);
 System.out.println(item.getRvNo());
-                ((MyViewHolder)holder).recommend.setAlpha(1f);
 
                 ((MyViewHolder)holder).itemImage.setImageResource(r);}
             catch (Exception e) {}
@@ -81,12 +90,15 @@ if(item.getRvCategory2()!=null) {
     ((MyViewHolder) holder).itemRv2.setText("#"+item.getRvCategory2());
 }
 ((MyViewHolder)holder).itemNickName.setText(item.getNickName());
+        ((MyViewHolder)holder).rvLikeCnt.setText(Integer.toString(item.setRvLikeCnt()));
         ((MyViewHolder)holder).itemTitle.setText(item.getRvTitle());
         ((MyViewHolder)holder).itemTitle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(context, item.getRvNo(), Toast.LENGTH_SHORT).show();
-            //    activity.onFragmentChanged(1);
+
+
+                //    activity.onFragmentChanged(1);
             }
         });
         final boolean[] flag = {true};

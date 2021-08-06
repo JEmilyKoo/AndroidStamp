@@ -128,13 +128,15 @@ contentPadding:카드 뷰 내의 여백 설정
                 android:layout_height="match_parent"
                 android:scaleType="fitStart"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/heartoff"
+                app:srcCompat="@drawable/hearton"
                 android:layout_marginRight="5dp"/>
             <TextView
                 android:layout_width="60dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:textSize="18sp"
+                android:id="@+id/rvLikeCnt"
+                android:textColor="@color/stampcolor"
                 android:text="1"/>
 
         </LinearLayout>

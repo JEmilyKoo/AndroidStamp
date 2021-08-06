@@ -13,4 +13,8 @@ public interface ReviewService {
 
     @GET("review/tripBoard")
     Call<List<ReviewDTO>> TripBoard();
+
+    @GET("review/post")
+    Call<ReviewDTO> Post(String rvNo);
+
 }

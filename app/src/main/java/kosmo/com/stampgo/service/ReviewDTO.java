@@ -231,4 +231,8 @@ public class ReviewDTO {
         this.image = image;
         this.rvViews = rvViews;
     }
+
+    public int setRvLikeCnt() {
+        return rvLikeCnt;
+    }
 }

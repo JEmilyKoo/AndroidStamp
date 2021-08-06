@@ -64,9 +64,9 @@ public class ReviewFragment extends Fragment {
         Button writeButton = rootView.findViewById(R.id.writeButton);
         writeButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                HomeActivity activity = (HomeActivity) getActivity();
-                activity.onFragmentChanged(5);
+              public void onClick(View v) {
+                    HomeActivity activity = (HomeActivity) getActivity();
+                    activity.onFragmentChanged(5);
             }
         });
 

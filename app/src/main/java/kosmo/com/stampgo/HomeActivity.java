@@ -24,6 +24,7 @@ public class HomeActivity extends AppCompatActivity {
     ReviewFragment reviewFragment;
     StampListFragment stampListFragment;
     WriteFragment writeFragment;
+    PostFragment postFragment;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +40,8 @@ public class HomeActivity extends AppCompatActivity {
         stampListFragment = new StampListFragment();
 
         writeFragment = new WriteFragment();
+
+        postFragment = new PostFragment();
 
     }
     private void getHashKey(){
@@ -88,6 +91,9 @@ public class HomeActivity extends AppCompatActivity {
 
             getSupportFragmentManager().beginTransaction().replace(R.id.container,writeFragment).commit();
         }
+        else if(index ==6){
 
+            getSupportFragmentManager().beginTransaction().replace(R.id.container,postFragment).commit();
+        }
     }
 }

@@ -60,7 +60,7 @@ public class ReviewFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_review,container,false);
-        addSideView();
+        addSideView(rootView);
         init(rootView);
         //mLayoutManager = new LinearLayoutManager(rootView.getContext());
         //recyclerView.setLayoutManager(mLayoutManager);
@@ -155,10 +155,12 @@ public class ReviewFragment extends Fragment {
         //return inflater.inflate(R.layout.fragment_review, container, false);
     }
 
-    private void addSideView(){
+    private void addSideView(ViewGroup rootView){
 
         SideBarView sidebar;
-      //  sidebar = (SideBarView) getActivity() ;
+     //   ImageButton menubutton = rootView.findViewById(R.id.menubutton);
+
+        //  sidebar = (SideBarView) getActivity() ;
           //      rootView.findViewById(R.id.fragment_review);
         //HomeActivity activity = (HomeActivity) getActivity()
 

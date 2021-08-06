@@ -2393,7 +2393,7 @@ int layout fragment_near_stamp 0x7f0c0036
 int layout fragment_post 0x7f0c0037
 int layout fragment_review 0x7f0c0038
 int layout fragment_stamp_list 0x7f0c0039
-int layout fragment_write 0x7f0c008a
+int layout fragment_write 0x7f0c003a
 int layout item_layout 0x7f0c003b
 int layout material_chip_input_combo 0x7f0c003c
 int layout material_clock_display 0x7f0c003d

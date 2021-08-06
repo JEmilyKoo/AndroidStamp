@@ -32,7 +32,6 @@ public class LoginActivity extends AppCompatActivity {
 
         //버튼에 리스너 부착
         btnLogin.setOnClickListener(listener);
-        System.out.println("btnLogin"+btnLogin);
     }
     View.OnClickListener listener = new View.OnClickListener() {
         @Override

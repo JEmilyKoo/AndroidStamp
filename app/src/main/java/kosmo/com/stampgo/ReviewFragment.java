@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.ImageButton;
 
 import java.util.List;
 import java.util.Vector;
@@ -28,7 +29,7 @@ public class ReviewFragment extends Fragment {
     private ViewGroup mainLayout;
     private ViewGroup viewLayout;
     private ViewGroup sideLayout;
-    private ViewGroup rootView;
+    //private ViewGroup rootView;
     private Boolean isMenuShow = false;
     private Boolean isExitFlag = false;
 
@@ -58,7 +59,9 @@ public class ReviewFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        rootView = (ViewGroup) inflater.inflate(R.layout.fragment_review,container,false);
+        ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_review,container,false);
+        addSideView();
+        init(rootView);
         //mLayoutManager = new LinearLayoutManager(rootView.getContext());
         //recyclerView.setLayoutManager(mLayoutManager);
         //위젯 얻기
@@ -68,7 +71,7 @@ public class ReviewFragment extends Fragment {
 
          Log.i("kosmo.com.stampgo", "나와라 얍!!!");
          ReviewService reviewService = new Retrofit.Builder()
-                            .baseUrl("http://10.0.2.2:9090/exer/")
+                            .baseUrl("http://192.168.0.8:9090/exer/")
                             .addConverterFactory(JacksonConverterFactory.create())
                             .build()
                             .create(ReviewService.class);
@@ -115,7 +118,7 @@ public class ReviewFragment extends Fragment {
                                              list.get(i).getRvcDate(),
                                              list.get(i).getFullName(),
                                              list.get(i).getRvfdate(),
-                                             bitmap));
+                                             bitmap, list.get(i).getRvViews()));
 
 
 
@@ -144,7 +147,7 @@ public class ReviewFragment extends Fragment {
         //recyclerView.setLayoutManager(new LinearLayoutManager(this));
         //가로방향
 
-     //   addSideView();
+     //
         //recyclerView.setLayoutManager(new LinearLayoutManager(this,RecyclerView.HORIZONTAL,false));
         return rootView;
 
@@ -155,8 +158,11 @@ public class ReviewFragment extends Fragment {
     private void addSideView(){
 
         SideBarView sidebar;
-        sidebar = new SideBarView(this.getActivity());
-        sideLayout.addView(sidebar);
+      //  sidebar = (SideBarView) getActivity() ;
+          //      rootView.findViewById(R.id.fragment_review);
+        //HomeActivity activity = (HomeActivity) getActivity()
+
+      //  sideLayout.addView(sidebar);
 /*
         viewLayout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -209,7 +215,7 @@ public class ReviewFragment extends Fragment {
         Log.e(TAG, "메뉴버튼 클릭");
     }
 
-    private void init(){
+    private void init( ViewGroup rootView){
 
         rootView.findViewById(R.id.btn_menu).setOnClickListener((View.OnClickListener) mContext);
 

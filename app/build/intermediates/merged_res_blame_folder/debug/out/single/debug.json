@@ -224,6 +224,10 @@
         "source": "C:\\LJH\\Workspace\\Android\\AndroidStamp\\app\\src\\main\\res\\layout\\fragment_stamp_list.xml"
     },
     {
+        "merged": "C:\\LJH\\Workspace\\Android\\AndroidStamp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_wirte.xml.flat",
+        "source": "C:\\LJH\\Workspace\\Android\\AndroidStamp\\app\\src\\main\\res\\layout\\fragment_wirte.xml"
+    },
+    {
         "merged": "C:\\LJH\\Workspace\\Android\\AndroidStamp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\LJH\\Workspace\\Android\\AndroidStamp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },

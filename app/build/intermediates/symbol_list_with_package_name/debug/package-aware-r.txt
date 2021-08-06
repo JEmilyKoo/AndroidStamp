@@ -59,6 +59,8 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array rv1
+array rv2
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -2193,6 +2195,8 @@ id snap
 id snapMargins
 id spacer
 id special_effects_controller_view_tag
+id spinner1
+id spinner2
 id spline
 id split_action_bar
 id spread
@@ -2267,6 +2271,8 @@ id transition_transform
 id triangle
 id tripBoardButton
 id tripMenuBar
+id tv_spinner1
+id tv_spinner2
 id unchecked
 id uniform
 id unlabeled
@@ -2285,7 +2291,11 @@ id withText
 id withinBounds
 id wrap
 id wrap_content
+id write
 id writeButton
+id writeMenuBar
+id writeRvCtt
+id writeTitle
 id zero_corner_chip
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
@@ -2384,6 +2394,7 @@ layout fragment_near_stamp
 layout fragment_post
 layout fragment_review
 layout fragment_stamp_list
+layout fragment_wirte
 layout item_layout
 layout material_chip_input_combo
 layout material_clock_display

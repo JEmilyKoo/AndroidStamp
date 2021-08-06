@@ -31,4 +31,7 @@ public interface StampService {
     @POST("profile")
     Call<Integer> profile(@Part("nickName") String nickName,@Part("pr") String pr,@Part("openprf") int openprf,@Part("id") String id);
 
+    @Multipart
+    @POST("review")
+    Call<Integer> review(@Part("nickName") String nickName,@Part("pr") String pr,@Part("openprf") int openprf,@Part("id") String id);
 }

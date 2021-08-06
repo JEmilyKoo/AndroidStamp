@@ -72,9 +72,7 @@ public class ReviewFragment extends Fragment {
                             .addConverterFactory(JacksonConverterFactory.create())
                             .build()
                             .create(ReviewService.class);
-
          Call<List<ReviewDTO>> call = reviewService.TripBoard();
-
         Log.i("kosmo.com.stampgo", "call");
          call.enqueue(new Callback<List<ReviewDTO>>() {
             @Override
@@ -85,11 +83,8 @@ public class ReviewFragment extends Fragment {
                          Log.i("kosmo.com.stampgo", "결과값: "+list.get(1).getRvTitle());
                          int size=list.size();
                      com.makeramen.roundedimageview.RoundedImageView itemImage = rootView.findViewById(R.id.itemImage);
-
                      for (int i=0 ; i<size;i++) {
                             //  itemImage.setImageURI(list.get(i).getImage());
-
-
                         String bitmap =  (list.get(i).getImage());
                         if(bitmap!=null){
                             System.out.println("값들어옴");
@@ -116,11 +111,7 @@ public class ReviewFragment extends Fragment {
                                              list.get(i).getFullName(),
                                              list.get(i).getRvfdate(),
                                              bitmap));
-
-
-
                      }
-
                      adapter = new MyRecyclerAdapter(rootView.getContext(),items);
                      recyclerView.setAdapter(adapter);
                      recyclerView.setLayoutManager(new GridLayoutManager(rootView.getContext(),1));
@@ -135,7 +126,6 @@ public class ReviewFragment extends Fragment {
                         Log.i("kosmo.com.stampgo", t.getMessage());
                     }
                 });
-
         //rootView.findViewById(R.id.itemImage);
         //  TextView itemTitle = rootView.findViewById(R.id.itemTitle);
          //어댑터 생성

@@ -1,5 +1,7 @@
 package kosmo.com.stampgo.service;
 
+import java.util.ArrayList;
+
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Multipart;
@@ -15,5 +17,18 @@ public interface StampService {
     @Multipart
     @POST("member/join")
     Call<Integer> join(@Part("id") String id,@Part("pwd") String pwd,@Part("name") String name);
+
+    //지도에서 스탬프 보여주기
+    @GET("stamp/list")
+    Call<ArrayList<StampDTO>> stampList();
+
+    //스탬프 찍기
+    @Multipart
+    @POST("stamp/check")
+    Call<Integer> check(@Part("nickName") String nickName,@Part("lat") Double lat,@Part("lng") Double lng);
+
+    @Multipart
+    @POST("profile")
+    Call<Integer> profile(@Part("nickName") String nickName,@Part("pr") String pr,@Part("openprf") int openprf,@Part("id") String id);
 
 }

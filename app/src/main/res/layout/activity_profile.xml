@@ -63,16 +63,18 @@
         android:id="@+id/radioGroup"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:translationX="140dp"
+        android:orientation="horizontal"
+        android:translationX="40dp"
         android:translationY="370dp"
-        tools:layout_editor_absoluteX="-30dp"
-        tools:layout_editor_absoluteY="-30dp">
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="366dp">
 
         <RadioButton
             android:id="@+id/radioButton1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="프로필 1"
+
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="102dp"
             tools:layout_editor_absoluteY="564dp" />

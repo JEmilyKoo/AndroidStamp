@@ -4,6 +4,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -53,7 +54,6 @@ public class MemberActivity extends AppCompatActivity {
             String password2 = pwd2.getText().toString();
             String username = name.getText().toString();
 
-
             if (!password.equals(password2)) {
                 new AlertDialog.Builder(MemberActivity.this)
                         .setIcon(android.R.drawable.ic_menu_info_details)
@@ -62,7 +62,6 @@ public class MemberActivity extends AppCompatActivity {
                         .show();
             }
             else {////비밀번호 같은지 확인
-
                 StampService stampService = new Retrofit.Builder()
                         .baseUrl("http://192.168.0.20:9090/exer/")
                         .addConverterFactory(JacksonConverterFactory.create())
@@ -74,19 +73,16 @@ public class MemberActivity extends AppCompatActivity {
                     public void onResponse(Call<Integer> call, Response<Integer> response) {
                         if (response.isSuccessful()) {
                             Log.i("kosmo.com.stampgo", "일단 들어옴");
-                            Log.i("kosmo.com.stampgo", userid);
-                            Log.i("kosmo.com.stampgo", password);
-                            Log.i("kosmo.com.stampgo", password2);
-                            Log.i("kosmo.com.stampgo", username);
-
                             if (response.body() == 1) {
-                                new AlertDialog.Builder(MemberActivity.this)
-                                        .setIcon(android.R.drawable.ic_menu_info_details)
-                                        .setTitle("회원가입 결과")
-                                        .setMessage("회원가입 성공 했습니다.")
-                                        .show();
+
                                 Intent intent = new Intent(MemberActivity.this, ProfileActivity.class);
                                 startActivity(intent);
+
+                                SharedPreferences preferences = getSharedPreferences("loginInfo",MODE_PRIVATE);
+                                SharedPreferences.Editor editor =preferences.edit();
+
+                                editor.putString("id",userid);
+                                editor.commit();
 
                             } else {
                                 new AlertDialog.Builder(MemberActivity.this)
@@ -95,12 +91,10 @@ public class MemberActivity extends AppCompatActivity {
                                         .setMessage("아이디가 중복되었습니다.")
                                         .show();
                             }
-
                         } else {//200번 아닌거
                             Log.i("kosmo.com.stampgo", "안된다!!!!");
                         }
                     }
-
                     @Override
                     public void onFailure(Call<Integer> call, Throwable t) {
                         Log.i("kosmo.com.stampgo", t.getMessage());

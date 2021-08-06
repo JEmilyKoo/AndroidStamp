@@ -1781,6 +1781,8 @@ drawable recommend
 drawable rounded
 drawable select_handler
 drawable share
+drawable stamp
+drawable stamp1
 drawable stamplogowhite300px
 drawable test_custom_background
 drawable tooltip_frame_dark

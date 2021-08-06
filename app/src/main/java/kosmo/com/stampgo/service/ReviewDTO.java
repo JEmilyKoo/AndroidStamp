@@ -17,6 +17,7 @@ public class ReviewDTO {
     private String rvVisitCnt;
     private String rvFile;
     private int rvLikeCheck;
+    private int rvViews;
 
 
     //rvLike 추가
@@ -199,8 +200,15 @@ public class ReviewDTO {
     public void setImage(String image) {
         this.image = image;
     }
+    public int getRvViews() {
+        return rvViews;
+    }
 
-    public ReviewDTO(String rvNo, String nickName, String rvTitle, String rvCtt, int rvLikeCnt, Date rvDate, String rvCategory1, String rvCategory2, String rvLat, String rvLng, String rvVisitCnt, String rvFile, int rvLikeCheck, Date rvlDate, String rvcNo, String rvCmnt, Date rvcDate, String fullName, String rvfdate, String image) {
+    public void setRvViews(String image) {
+        this.rvViews = rvViews;
+    }
+
+    public ReviewDTO(String rvNo, String nickName, String rvTitle, String rvCtt, int rvLikeCnt, Date rvDate, String rvCategory1, String rvCategory2, String rvLat, String rvLng, String rvVisitCnt, String rvFile, int rvLikeCheck, Date rvlDate, String rvcNo, String rvCmnt, Date rvcDate, String fullName, String rvfdate, String image,int rvViews) {
         this.rvNo = rvNo;
         this.nickName = nickName;
         this.rvTitle = rvTitle;
@@ -221,5 +229,6 @@ public class ReviewDTO {
         this.fullName = fullName;
         this.rvfdate = rvfdate;
         this.image = image;
+        this.rvViews = rvViews;
     }
 }

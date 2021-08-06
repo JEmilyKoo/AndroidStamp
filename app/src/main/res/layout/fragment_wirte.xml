@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ReviewFragment"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_margin="0dp"
+    android:padding="0dp"
+    >
+<!--7열 context 수정해야-->
+
+    <LinearLayout
+        android:id="@+id/writeMenuBar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="top"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:layout_margin="0dp"
+        android:padding="0dp">
+
+        <ImageButton
+            android:id="@+id/menuButton"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/stampcolor"
+            android:scaleType="fitStart"
+            android:src="@drawable/menubutton"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+            />
+
+        <Button
+            android:id="@+id/write"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:layout_weight="7"
+            android:background="@drawable/tripboardbutton"
+            android:shadowColor="#A8A8A8"
+
+            android:padding="0dp"
+
+            android:shadowDx="1"
+            android:shadowDy="1"
+
+            android:shadowRadius="5"
+            android:text="리뷰 작성"
+            android:textColor="#FCFCFC"
+            android:textSize="14sp"
+
+
+            />
+
+        <LinearLayout
+            android:id="@+id/whiteMenu"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_gravity="top"
+          android:background="@color/stampcolor"
+            android:orientation="horizontal"
+            android:layout_margin="0dp"
+            android:layout_weight="8"
+            android:padding="0dp">
+
+            <Button
+                android:id="@+id/writeButton"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+
+                android:textColor="#0E53BF"
+
+                android:background="@drawable/categorybutton"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="7"
+                android:layout_margin="0dp"
+                android:padding="0dp"
+
+                android:text="등록하기"
+                />
+
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/writebutton"
+
+            android:text="x"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+
+            />
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:translationY="40dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/writeTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:drawableStart="@drawable/ic_baseline_person_24"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:hint="제목을 입력해 주세요"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHint="@color/stampcolor"
+                android:textCursorDrawable="@drawable/cursor_drawable"
+                android:textSelectHandle="@drawable/select_handler"
+                android:textSelectHandleLeft="@drawable/select_handler"
+                android:textSelectHandleRight="@drawable/select_handler"
+                android:textSize="24sp"
+                />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/map_view"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@color/stampcolor"
+            android:orientation="horizontal">
+        </RelativeLayout>
+
+
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:rowCount="2"
+            android:columnCount="2"
+            android:background="#CCCCCC"
+
+            >
+            <TextView
+                android:id="@+id/tv_spinner1"
+                android:layout_width="242dp"
+                android:layout_height="wrap_content"
+                android:text="지역별 선택"
+                android:textColor="@color/stampsubcolor"
+                android:textSize="20dp"/>
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:entries="@array/rv1"
+                android:background="@color/stampcolor"
+                android:textSize="20dp"
+                >
+            </Spinner>
+            <TextView
+                android:id="@+id/tv_spinner2"
+                android:layout_width="242dp"
+                android:layout_height="wrap_content"
+                android:text="여행지 선택"
+                android:textColor="@color/stampsubcolor"
+                android:textSize="20dp"
+                />
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:entries="@array/rv2"
+                android:background="@color/stampcolor"
+                >
+            </Spinner>
+
+
+
+        </GridLayout>
+
+        <EditText
+            android:id="@+id/writeRvCtt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:drawableStart="@drawable/ic_baseline_person_24"
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="내용을 입력해 주세요"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="@color/stampcolor"
+            android:textCursorDrawable="@drawable/cursor_drawable"
+            android:textSelectHandle="@drawable/select_handler"
+            android:textSelectHandleLeft="@drawable/select_handler"
+            android:textSelectHandleRight="@drawable/select_handler"
+            android:textSize="20sp"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+</FrameLayout>

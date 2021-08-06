@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.ImageButton;
 
 import java.util.List;
 import java.util.Vector;
@@ -28,7 +29,7 @@ public class ReviewFragment extends Fragment {
     private ViewGroup mainLayout;
     private ViewGroup viewLayout;
     private ViewGroup sideLayout;
-    private ViewGroup rootView;
+    //private ViewGroup rootView;
     private Boolean isMenuShow = false;
     private Boolean isExitFlag = false;
 
@@ -58,7 +59,9 @@ public class ReviewFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        rootView = (ViewGroup) inflater.inflate(R.layout.fragment_review,container,false);
+        ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_review,container,false);
+        addSideView(rootView);
+        init(rootView);
         //mLayoutManager = new LinearLayoutManager(rootView.getContext());
         //recyclerView.setLayoutManager(mLayoutManager);
         //위젯 얻기
@@ -68,11 +71,13 @@ public class ReviewFragment extends Fragment {
 
          Log.i("kosmo.com.stampgo", "나와라 얍!!!");
          ReviewService reviewService = new Retrofit.Builder()
-                            .baseUrl("http://10.0.2.2:9090/exer/")
+                            .baseUrl("http://192.168.0.8:9090/exer/")
                             .addConverterFactory(JacksonConverterFactory.create())
                             .build()
                             .create(ReviewService.class);
+
          Call<List<ReviewDTO>> call = reviewService.TripBoard();
+
         Log.i("kosmo.com.stampgo", "call");
          call.enqueue(new Callback<List<ReviewDTO>>() {
             @Override
@@ -83,8 +88,11 @@ public class ReviewFragment extends Fragment {
                          Log.i("kosmo.com.stampgo", "결과값: "+list.get(1).getRvTitle());
                          int size=list.size();
                      com.makeramen.roundedimageview.RoundedImageView itemImage = rootView.findViewById(R.id.itemImage);
+
                      for (int i=0 ; i<size;i++) {
                             //  itemImage.setImageURI(list.get(i).getImage());
+
+
                         String bitmap =  (list.get(i).getImage());
                         if(bitmap!=null){
                             System.out.println("값들어옴");
@@ -110,8 +118,12 @@ public class ReviewFragment extends Fragment {
                                              list.get(i).getRvcDate(),
                                              list.get(i).getFullName(),
                                              list.get(i).getRvfdate(),
-                                             bitmap));
+                                             bitmap, list.get(i).getRvViews()));
+
+
+
                      }
+
                      adapter = new MyRecyclerAdapter(rootView.getContext(),items);
                      recyclerView.setAdapter(adapter);
                      recyclerView.setLayoutManager(new GridLayoutManager(rootView.getContext(),1));
@@ -126,6 +138,7 @@ public class ReviewFragment extends Fragment {
                         Log.i("kosmo.com.stampgo", t.getMessage());
                     }
                 });
+
         //rootView.findViewById(R.id.itemImage);
         //  TextView itemTitle = rootView.findViewById(R.id.itemTitle);
          //어댑터 생성
@@ -134,7 +147,7 @@ public class ReviewFragment extends Fragment {
         //recyclerView.setLayoutManager(new LinearLayoutManager(this));
         //가로방향
 
-     //   addSideView();
+     //
         //recyclerView.setLayoutManager(new LinearLayoutManager(this,RecyclerView.HORIZONTAL,false));
         return rootView;
 
@@ -142,11 +155,16 @@ public class ReviewFragment extends Fragment {
         //return inflater.inflate(R.layout.fragment_review, container, false);
     }
 
-    private void addSideView(){
+    private void addSideView(ViewGroup rootView){
 
         SideBarView sidebar;
-        sidebar = new SideBarView(this.getActivity());
-        sideLayout.addView(sidebar);
+     //   ImageButton menubutton = rootView.findViewById(R.id.menubutton);
+
+        //  sidebar = (SideBarView) getActivity() ;
+          //      rootView.findViewById(R.id.fragment_review);
+        //HomeActivity activity = (HomeActivity) getActivity()
+
+      //  sideLayout.addView(sidebar);
 /*
         viewLayout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -199,7 +217,7 @@ public class ReviewFragment extends Fragment {
         Log.e(TAG, "메뉴버튼 클릭");
     }
 
-    private void init(){
+    private void init( ViewGroup rootView){
 
         rootView.findViewById(R.id.btn_menu).setOnClickListener((View.OnClickListener) mContext);
 

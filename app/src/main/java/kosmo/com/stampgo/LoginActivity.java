@@ -42,7 +42,7 @@ public class LoginActivity extends AppCompatActivity {
             String password = pwd.getText().toString();
 
             StampService stampService = new Retrofit.Builder()
-                    .baseUrl("http://192.168.0.20:9090/exer/")
+                    .baseUrl("http://192.168.0.8:9090/exer/")
                     .addConverterFactory(JacksonConverterFactory.create())
                     .build()
                     .create(StampService.class);

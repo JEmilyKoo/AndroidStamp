@@ -56,7 +56,7 @@ public class MyRecyclerAdapter extends RecyclerView.Adapter {
             ((MyViewHolder)holder).itemImage.setImageBitmap(decodedBitmap);
 
         }
-     int rvNo =      Integer.parseInt(item.getRvNo());
+     int rvNo = Integer.parseInt(item.getRvNo());
 
         if(510>rvNo && rvNo>500){
             rvNo=rvNo-500;
@@ -97,6 +97,7 @@ if(item.getRvCategory2()!=null) {
                 if(flag[0]) {
                     Toast.makeText(context, item.getRvTitle(), Toast.LENGTH_SHORT).show();
                     ((MyViewHolder) holder).itemImage.setAlpha(0.2f);
+
                     flag[0] =false;
                 }
                 else{

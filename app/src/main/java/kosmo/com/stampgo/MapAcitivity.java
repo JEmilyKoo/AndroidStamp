@@ -51,8 +51,6 @@ public class MapAcitivity extends AppCompatActivity {
 
     //권한요청시 구분하기위한 요청코드
     public static final int MY_REQUEST_PERMISSION_LOCATION =1;
-    //주소명으로 위치 찾을때 찾은 주소들의 주소명/위도/경도를 저장할 컬렉션]
-    List<Map> searchLatLng = new Vector<>();
     //위치 서비스를 사용사용하기 위한 변수
     private LocationManager locationManager;
     private LocationListener locationListener;
@@ -172,7 +170,6 @@ public class MapAcitivity extends AppCompatActivity {
             public void onLocationChanged(@NonNull Location location) {
                 Double lat = location.getLatitude();
                 Double lng = location.getLongitude();
-                nickName= "KIM";
                 if(nickName != null){
                     StampService stampService = new Retrofit.Builder()
                             .baseUrl("http://192.168.0.20:9090/exer/")

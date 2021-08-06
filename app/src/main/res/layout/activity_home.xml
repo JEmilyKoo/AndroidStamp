@@ -8,6 +8,7 @@
     android:id="@+id/container"
     >
 
+
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:orientation="vertical" android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -15,17 +16,12 @@
             android:id="@+id/map_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
-    </RelativeLayout>
-
+        </RelativeLayout>
 
     <fragment
         android:id="@+id/homeFragment"
         android:name="kosmo.com.stampgo.HomeFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
-
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

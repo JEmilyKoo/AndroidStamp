@@ -49,7 +49,7 @@
             android:shadowDy="1"
 
             android:shadowRadius="5"
-            android:text="카테고리"
+            android:text="#경기 #야경"
             android:textColor="#FCFCFC"
             android:textSize="14sp"
 
@@ -61,7 +61,7 @@
             android:layout_width="100dp"
             android:layout_height="40dp"
             android:layout_gravity="top"
-          android:background="@color/stampcolor"
+            android:background="@color/stampcolor"
             android:orientation="horizontal"
             android:layout_margin="0dp"
             android:layout_weight="8"
@@ -82,7 +82,7 @@
                 android:shadowRadius="7"
                 android:layout_margin="0dp"
                 android:padding="0dp"
-                android:text="닉네임"
+                android:text="범이"
                 />
 
 
@@ -117,7 +117,7 @@
             android:id="@+id/postTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="제목"
+            android:text="서울랜드 야경포인트"
             android:gravity="center"
             android:background="@drawable/categorybutton"
             android:textColor="@color/stampsubcolor"
@@ -128,7 +128,7 @@
             android:id="@+id/postDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2021.8.6"
+            android:text="2021.7.26"
             android:gravity="center"
             android:background="@drawable/categorybutton"
             android:textColor="@color/stampsubcolor"
@@ -141,7 +141,7 @@
     <ImageView
 
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="300dp"
         android:background="@color/stampcolor"
 
         android:translationY="90dp">
@@ -149,6 +149,13 @@
 
     </ImageView>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="서울랜드는 경기도에 있다는 점"
+        android:textColor="@color/stampsubcolor"
+        android:textSize="20sp"
+        android:translationY="500dp" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -276,7 +283,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-           >
+            >
 
             <ImageButton
                 android:id="@+id/postShare"
@@ -290,7 +297,7 @@
                 android:shadowDx="1"
                 android:shadowDy="1"
                 android:shadowRadius="5"
-android:scaleType="fitCenter"
+                android:scaleType="fitCenter"
                 android:scaleX="0.6"
                 android:scaleY="0.6"
                 android:src="@drawable/share"
@@ -302,6 +309,13 @@ android:scaleType="fitCenter"
                 />
         </LinearLayout>
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/photo6"
+        android:translationY="-100dp" />
 
 
     <!-- TODO: Update blank fragment layout -->

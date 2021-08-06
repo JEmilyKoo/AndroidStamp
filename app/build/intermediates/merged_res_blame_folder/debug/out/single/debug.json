@@ -36,12 +36,12 @@
         "source": "C:\\LJH\\Workspace\\Android\\AndroidStamp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\LJH\\Workspace\\Android\\AndroidStamp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-ldpi_ic_launcher.png.flat",
-        "source": "C:\\LJH\\Workspace\\Android\\AndroidStamp\\app\\src\\main\\res\\mipmap-ldpi\\ic_launcher.png"
-    },
-    {
         "merged": "C:\\LJH\\Workspace\\Android\\AndroidStamp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
         "source": "C:\\LJH\\Workspace\\Android\\AndroidStamp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\LJH\\Workspace\\Android\\AndroidStamp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-ldpi_ic_launcher.png.flat",
+        "source": "C:\\LJH\\Workspace\\Android\\AndroidStamp\\app\\src\\main\\res\\mipmap-ldpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\LJH\\Workspace\\Android\\AndroidStamp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",

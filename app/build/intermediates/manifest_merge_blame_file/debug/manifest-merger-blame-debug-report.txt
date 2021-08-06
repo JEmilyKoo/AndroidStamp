@@ -6,84 +6,84 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="26"
-8-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml
+8-->C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="30" />
-9-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml
+9-->C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml
 10    <!-- 인터넷 권 한 -->
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:5:5-67
-11-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:5:22-64
+11-->C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:5:22-64
 12    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
-12-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:6:5-7:23
-12-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:6:22-76
+12-->C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:6:5-7:23
+12-->C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:6:22-76
 13    </uses-permission>
 14
 15    <!-- test -->
 16    <!-- test 2 -->
 17    <!-- test3 -->
 18    <application
-18-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:12:5-36:19
+18-->C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:12:5-36:19
 19        android:allowBackup="true"
-19-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:14:9-35
+19-->C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:14:9-35
 20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-20-->[androidx.core:core:1.5.0] C:\Users\kosmo_16\.gradle\caches\transforms-2\files-2.1\cc5e9dcdc56dc39042f72c501235e83f\core-1.5.0\AndroidManifest.xml:24:18-86
+20-->[androidx.core:core:1.5.0] C:\Users\rnwjd\.gradle\caches\transforms-2\files-2.1\cc5e9dcdc56dc39042f72c501235e83f\core-1.5.0\AndroidManifest.xml:24:18-86
 21        android:debuggable="true"
 22        android:extractNativeLibs="false"
 23        android:icon="@mipmap/ic_launcher"
-23-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:15:9-43
+23-->C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:15:9-43
 24        android:label="@string/app_name"
-24-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:16:9-41
+24-->C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:16:9-41
 25        android:roundIcon="@mipmap/ic_launcher_round"
-25-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:17:9-54
+25-->C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:17:9-54
 26        android:supportsRtl="true"
-26-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:18:9-35
+26-->C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:18:9-35
 27        android:testOnly="true"
 28        android:theme="@style/Theme.StampGO"
-28-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:19:9-45
+28-->C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:19:9-45
 29        android:usesCleartextTraffic="true" >
-29-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:13:9-44
+29-->C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:13:9-44
 30        <activity android:name="kosmo.com.stampgo.HomeActivity" />
-30-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:20:9-49
-30-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:20:19-47
+30-->C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:20:9-49
+30-->C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:20:19-47
 31        <activity android:name="kosmo.com.stampgo.LoginActivity" />
-31-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:21:9-51
-31-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:21:19-48
+31-->C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:21:9-51
+31-->C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:21:19-48
 32        <activity android:name="kosmo.com.stampgo.MemberActivity" /> <!-- MainActivity 에서 intent-filter 를 제거하고 SplashActivity 로 옮겨서 활성화 -->
-32-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:22:9-52
-32-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:22:19-49
+32-->C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:22:9-52
+32-->C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:22:19-49
 33        <activity android:name="kosmo.com.stampgo.MainActivity" />
-33-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:23:9-50
-33-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:23:19-47
+33-->C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:23:9-50
+33-->C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:23:19-47
 34        <activity android:name="kosmo.com.stampgo.MapAcitivity" />
-34-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:24:9-50
-34-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:24:19-47
+34-->C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:24:9-50
+34-->C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:24:19-47
 35        <activity android:name="kosmo.com.stampgo.ProfileActivity" />
-35-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:25:9-53
-35-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:25:19-50
+35-->C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:25:9-53
+35-->C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:25:19-50
 36        <activity
-36-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:26:9-34:20
+36-->C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:26:9-34:20
 37            android:name="kosmo.com.stampgo.SplashActivity"
-37-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:27:13-43
+37-->C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:27:13-43
 38            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
-38-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:28:13-71
+38-->C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:28:13-71
 39            <intent-filter>
-39-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:29:13-33:29
+39-->C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:29:13-33:29
 40                <action android:name="android.intent.action.MAIN" />
-40-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:30:17-69
-40-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:30:25-66
+40-->C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:30:17-69
+40-->C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:30:25-66
 41
 42                <category android:name="android.intent.category.LAUNCHER" />
-42-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:32:17-77
-42-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:32:27-74
+42-->C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:32:17-77
+42-->C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:32:27-74
 43            </intent-filter>
 44        </activity>
 45
 46        <meta-data
-46-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:35:9-106
+46-->C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:35:9-106
 47            android:name="com.kakao.sdk.AppKey"
-47-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:35:20-55
+47-->C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:35:20-55
 48            android:value="ad747a9e4b06f185c274a1fdfb39c93b" />
-48-->C:\LJH\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:35:56-104
+48-->C:\KJE\Workspace\Android\AndroidStamp\app\src\main\AndroidManifest.xml:35:56-104
 49    </application>
 50
 51</manifest>

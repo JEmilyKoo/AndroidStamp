@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 import java.util.List;
@@ -60,6 +61,15 @@ public class ReviewFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_review,container,false);
+        Button writeButton = rootView.findViewById(R.id.writeButton);
+        writeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                HomeActivity activity = (HomeActivity) getActivity();
+                activity.onFragmentChanged(5);
+            }
+        });
+
         addSideView(rootView);
         init(rootView);
         //mLayoutManager = new LinearLayoutManager(rootView.getContext());

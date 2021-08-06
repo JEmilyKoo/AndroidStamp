@@ -47,7 +47,8 @@ public class WriteFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_write,container,false);
-        Button button = rootView.findViewById(R.id.button);
+
+        /*Button button = rootView.findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,6 +56,6 @@ public class WriteFragment extends Fragment {
                 activity.onFragmentChanged(1);
             }
         });
-
+*/
         return rootView; }
 }

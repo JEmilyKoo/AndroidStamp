@@ -38,6 +38,7 @@ public class HomeActivity extends AppCompatActivity {
         reviewFragment = new ReviewFragment();
         stampListFragment = new StampListFragment();
 
+        writeFragment = new WriteFragment();
 
     }
     private void getHashKey(){

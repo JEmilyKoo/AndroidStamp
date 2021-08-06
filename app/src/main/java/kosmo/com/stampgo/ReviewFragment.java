@@ -69,7 +69,14 @@ public class ReviewFragment extends Fragment {
                     activity.onFragmentChanged(5);
             }
         });
-
+        Button tripBoardButton = rootView.findViewById(R.id.tripBoardButton);
+        tripBoardButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                HomeActivity activity = (HomeActivity) getActivity();
+                activity.onFragmentChanged(6);
+            }
+        });
         addSideView(rootView);
         init(rootView);
         //mLayoutManager = new LinearLayoutManager(rootView.getContext());

@@ -53,7 +53,7 @@ public class PostFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_write,container,false);
+        ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_post,container,false);
         Log.i("kosmo.com.stampgo", "나와!!!");
         /*String rvNo = item.getRvNo();
 

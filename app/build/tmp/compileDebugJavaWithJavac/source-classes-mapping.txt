@@ -1,7 +1,8 @@
 kosmo/com/stampgo/service/ReviewDTO.java
  kosmo.com.stampgo.service.ReviewDTO
-kosmo/com/stampgo/HomeActivity.java
- kosmo.com.stampgo.HomeActivity
+kosmo/com/stampgo/SplashActivity.java
+ kosmo.com.stampgo.SplashActivity
+ kosmo.com.stampgo.SplashActivity$1
 kosmo/com/stampgo/NearStampFragment.java
  kosmo.com.stampgo.NearStampFragment
  kosmo.com.stampgo.NearStampFragment$1
@@ -9,8 +10,12 @@ kosmo/com/stampgo/LoginActivity.java
  kosmo.com.stampgo.LoginActivity
  kosmo.com.stampgo.LoginActivity$1
  kosmo.com.stampgo.LoginActivity$1$1
-kosmo/com/stampgo/PostFragment.java
- kosmo.com.stampgo.PostFragment
+kosmo/com/stampgo/ReviewFragment.java
+ kosmo.com.stampgo.ReviewFragment
+ kosmo.com.stampgo.ReviewFragment$1
+ kosmo.com.stampgo.ReviewFragment$2
+ kosmo.com.stampgo.ReviewFragment$3
+ kosmo.com.stampgo.ReviewFragment$4
 kosmo/com/stampgo/service/ReviewService.java
  kosmo.com.stampgo.service.ReviewService
 kosmo/com/stampgo/MenuFragment.java
@@ -63,15 +68,11 @@ kosmo/com/stampgo/ProfileActivity.java
  kosmo.com.stampgo.ProfileActivity$2
 kosmo/com/stampgo/service/MemberDTO.java
  kosmo.com.stampgo.service.MemberDTO
-kosmo/com/stampgo/SplashActivity.java
- kosmo.com.stampgo.SplashActivity
- kosmo.com.stampgo.SplashActivity$1
-kosmo/com/stampgo/ReviewFragment.java
- kosmo.com.stampgo.ReviewFragment
- kosmo.com.stampgo.ReviewFragment$1
- kosmo.com.stampgo.ReviewFragment$2
- kosmo.com.stampgo.ReviewFragment$3
 kosmo/com/stampgo/MyRecyclerAdapter.java
  kosmo.com.stampgo.MyRecyclerAdapter
  kosmo.com.stampgo.MyRecyclerAdapter$1
  kosmo.com.stampgo.MyRecyclerAdapter$2
+kosmo/com/stampgo/HomeActivity.java
+ kosmo.com.stampgo.HomeActivity
+kosmo/com/stampgo/PostFragment.java
+ kosmo.com.stampgo.PostFragment

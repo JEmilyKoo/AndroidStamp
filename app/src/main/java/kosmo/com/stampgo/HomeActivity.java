@@ -23,6 +23,7 @@ public class HomeActivity extends AppCompatActivity {
     NearStampFragment nearStampFragment;
     ReviewFragment reviewFragment;
     StampListFragment stampListFragment;
+    WriteFragment writeFragment;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -82,7 +83,10 @@ public class HomeActivity extends AppCompatActivity {
 
             getSupportFragmentManager().beginTransaction().replace(R.id.container,stampListFragment).commit();
         }
+        else if(index ==5){
 
+            getSupportFragmentManager().beginTransaction().replace(R.id.container,writeFragment).commit();
+        }
 
     }
 }

@@ -2394,7 +2394,7 @@ layout fragment_near_stamp
 layout fragment_post
 layout fragment_review
 layout fragment_stamp_list
-layout fragment_wirte
+layout fragment_write
 layout item_layout
 layout material_chip_input_combo
 layout material_clock_display
